@@ -5,6 +5,11 @@
 # === ... ===
 
 # Load profile
+export TERMINAL=kitty
+export EDITOR=nvim
+export XDG_CONFIG_HOME=~/.config
+export XDG_DATA_HOME=~/.local/share
+export XDG_CACHE_HOME=~/.cache
 source $HOME/.config/user-dirs.dirs
 
 # === Raw zsh stuff ===
@@ -61,15 +66,18 @@ fi
 # Load all plugins defined below.
 # Plugins must be in $XDG_DATA_HOME/zsh/plugins
 ZSH_PLUGINS=(
-    "zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-    "zsh-you-should-use/you-should-use.plugin.zsh"
+    "zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+    "MichaelAquilina/zsh-you-should-use/you-should-use.plugin.zsh"
 )
-for plug in $ZSH_PLUGINS; do
-    repo=$XDG_DATA_HOME/zsh/plugins/$(cut -d '/' -f1 <<< $plug)
-    if [[ -d $repo ]]; then
-        source $XDG_DATA_HOME/zsh/plugins/$plug;
+plugdir=$XDG_DATA_HOME/zsh/plugins
+for repo in $ZSH_PLUGINS; do
+    user=$(cut -d '/' -f1 <<< $repo)
+    name=$(cut -d '/' -f2 <<< $repo)
+    file=$(cut -d '/' -f3 <<< $repo)
+    if [[ -d "$plugdir/$name" ]]; then
+        source "$plugdir/$name/$file";
     else
-        echo 'I dont find the requested plugin, try pulling' $repo;
+        git clone "https://github.com/$user/$name" "$plugdir/$name";
     fi
 done
 unset plug repo

@@ -576,3 +576,439 @@ python lab3.py
  . /home/kaarmu/.local/share/virtualenvs/lab03-VpPYegNp/bin/activate
 nvim lab3.py
 exit
+mkdir ~/.config/herbstluftwm -p
+cp /etc/xdg/herbstluftwm/autostart ~/.config/herbstluftwm
+nano ~/.zshrc
+source .zshrc
+nvim ~/.config/herbstluftwm/autostart
+nvim ~/.config/herbstluftwm/autostart
+nvim ~/.config/herbstluftwm/autostart
+startx herbstluftwm
+nvim ~/.config/herbstluftwm/autostart
+nvim .zshrc
+startx --help
+ls
+ls -a
+xinit herbstluftwm
+gpasswd --help
+gpasswd -a kaarmu tty
+sudo gpasswd -a kaarmu tty
+xinit herbstluftwm
+nvim ~/.config/herbstluftwm/autostart
+chmod --help
+chmod u+s /usr/bin/Xorg
+sudo chmod u+s /usr/bin/Xorg
+xinit herbstluftwm
+ls
+ls -a
+nvim ~/.config/herbstluftwm/autostart
+groups
+sudo gpasswd --add kaarmu dialout
+nvim ~/.config/herbstluftwm/autostart
+reboot
+startx --help
+ls
+ls -a
+xinit herbstluftwm
+gpasswd --help
+gpasswd -a kaarmu tty
+sudo gpasswd -a kaarmu tty
+xinit herbstluftwm
+nvim ~/.config/herbstluftwm/autostart
+chmod --help
+chmod u+s /usr/bin/Xorg
+sudo chmod u+s /usr/bin/Xorg
+xinit herbstluftwm
+ls
+ls -a
+nvim ~/.config/herbstluftwm/autostart
+groups
+sudo gpasswd --add kaarmu dialout
+nvim ~/.config/herbstluftwm/autostart
+reboot
+xinit herbstluftwm
+chmod u+s /usr/bin/Xorg
+sudo chmod u+s /usr/bin/Xorg
+xinit herbstluftwm
+startx
+sudo pacman -S xterm
+startx
+shutdown now
+journalctl less -F
+journalctl | less -F
+ls /var/log
+xinit herbstluftwm
+less .local/share/xorg/Xorg.0.log
+lspci -v | grep -A1 -e VGA -e 3D
+sudo pacman -S xf86-video-intel
+xinit herbstluftwm
+shutdown now
+uname -h
+uname --help
+uname -s
+uname -r
+reboot
+xrandr -h
+xrandr --help
+xrandr
+xrandr --help
+xrandr --prop
+firefox
+xrandr --dpi 144
+lspci -v | grep -A1 -e VGA -e 3D 
+sudo pacman -S nvidia
+xrandr --help
+xrandr --verbose
+xrandr -dpi 192
+xrandr --dpi 192
+nmcli d wlan0 scan
+nmcli d wifi list
+firefox &
+nmcli d wifi connect eduroam
+nmcli d h
+nmcli d wifi connect "Starbucks WiFi"
+xrandr
+xrandr --output eDP1 --scale 1.25x1.25
+exit
+firefox &
+xrandr --output eDP1 --scale 1x1
+,s
+ls
+ls -a
+pacman -S xorg-xrdb
+udo acman -S xorg-xrdb
+sudo acman -S xorg-xrdb
+sudo pacman -S xorg-xrdb
+ls
+ls -a
+xrdb -query -all
+xrandr --dpi 160
+nvim .Xresources
+xrdb -load ~/.Xresources
+exit
+exit
+firefox &
+firefox &
+cd .config
+cd herbstluftwm
+pacman -Qq dzen
+pacman -Qq dzen*
+paru -S polybar
+paru -S alsa-utils
+alsamixer
+systemctl --type=service
+herbstclient layout
+ping google.com
+herbstluftclient
+herbstluftclient help
+herbstluftclient -h
+herbstclient 
+herbstclient help
+herbstclient list_monitors 
+herbstclient layout
+herbstclient layout
+herbstclient list_commands 
+ping google.com
+bspc
+xd
+nvim .config/herbstluftwm/autostart
+exit
+nvim
+exit
+firefox &
+cd .config/herbstluftwm
+nvim autostart
+cat autostart
+nvim panel.sh
+cat panel.sh
+pgrep -u $UID -x polybar
+polybar &
+ls ..
+polybar example
+mkdir ~/.config/polybar
+cp /usr/share/doc/polybar/config ../polybar/
+cd ../polybar
+nvim config
+polybar 
+nvim ../herbstluftwm/autostart
+ls -h
+ls --help
+ls -l
+cd ../herbstluftwm
+ls -l
+chmod +x panel.sh
+polybar panel.sh
+panel.sh
+./panel.sh
+ping google.com
+cd .config/polybar
+nvim config
+polybar example
+nvim config
+polybar example
+nvim config
+polybar main-herbst
+polybar herbst
+nvim config
+polybar mainbar-herbst
+nvim config
+nvim ../herbstluftwm/panel.sh
+nvim config
+firefox &
+cd .config
+ls
+pacman -S neofetch
+sudo pacman -S neofetch
+neofetch
+cat /usr/share/doc/kitty/kitty.conf
+cp /usr/share/doc/kitty/kitty.conf ~/.config/kitty
+nvim ~/.config/kitty/kitty.conf
+herbstclient layout
+nvim .config/polybar/config
+ch -d '/' -f1 "zsh/plug"
+cut -d '/' -f1 "zsh/plug"
+cut -d '/' -f1 <<< "zsh/plug"
+cut -d '/' -f1 <<< "user/zsh/plug"
+cut -d '/' -f2 <<< "user/zsh/plug"
+cut -d '/' -f3 <<< "user/zsh/plug"
+echo 'git clone'
+echo git clone
+git clone help
+git clone -h
+ping archlinux.org
+exit
+firefox &
+cd /local/share/zs
+cd .config
+ls
+cd zsh
+cd
+nvim .zshrc
+ls
+nvim .zshrc
+nvim .zshrc
+nvim .zshrc
+ls
+cd plugins
+ls
+cd zsh-you-should-use
+ls
+ls
+cd .local/share/
+ls
+cd zsh
+ls
+cd plugins
+ls
+cd zsh-
+cd zsh-syntax-highlighting
+ls
+ls
+ls
+cd ../
+ls
+cd zsh-you-should-use
+ls
+cd ../
+ls
+cd ../
+ls
+nvim ~/.zshrc
+ls
+cd .local
+ls
+cd share
+echo $XDG_DATA_HOME
+cd zsh
+ls
+cd plugins
+ls
+rmdir ./*
+ls
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+ls
+cd .local/share
+ls
+cd zsh
+ls
+cd plugins
+ls
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+source ~/.zshrc
+ls
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+nvim ~/.zshrc
+source ~/.zshrc
+nvim ~/.zshrc
+nvim .zshrc
+\:q
+exit
+ping archlinux.org
+clear
+firefox &
+nvim ~/.config/kitty/kitty.conf
+dmenu
+dmenu -h
+dmenu_run
+dmenu_run
+dmenu_run -h
+cd downloads
+ls
+cat eduroam-linux-KRIoT-KTH.SE_eduroam.py
+python eduroam-linux-KRIoT-KTH.SE_eduroam.py
+nv ../todo.md
+nv eduroam-linux-KRIoT-KTH.SE_eduroam.py
+paru -S python-pip
+pip
+py eduroam-linux-KRIoT-KTH.SE_eduroam.py
+ls
+nmcli d wifi eduroam
+nmcli d wifi connect eduroam
+paru -Ss network-manager
+paru -Ss nm
+pacman -Ss nm
+pacman -Ss nm-
+sudo pacman -S nm-connection-editor
+nm
+NetworkManager
+sudo NetworkManager
+py eduroam-linux-KRIoT-KTH.SE_eduroam.py
+paru -S insync
+python -m pip list
+firefox &
+paru -S thunar
+paru -S dmenu
+nvim todo.md
+cd .config
+ls
+cd herbstluftwm
+nv autostart
+nv ../kitty/kitty.conf
+nv autostart
+cd
+ls
+ls -a
+rm -r .cat_installer
+exit
+dmesg --help
+dmesg | grep "ACPI Error:"
+sudo dmesg | grep "ACPI Error:"
+lspci -v | grep -A1 -e VGA -e 3D
+sudo pacman -S xf86-video-intel
+xinit herbstluftwm
+pacman -Qq linux-surface
+ls /boot
+ls /boot/EFI
+nano /usr/share/X11/xorg.conf.d
+nano /usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
+nvidia
+ls
+cd .local
+ls
+ls a-
+ls -a
+cd share
+ls
+cd xorg
+ls
+less Xorg.0.log
+stat /usr/bin/Xorg
+stat /usr/bin/X
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+cd ~/
+nano .xinitrc
+nv ~/.config/herbstluftwm/autostart
+startx
+ping google.com
+startx
+startx
+startx
+cd .config
+ls
+mkdir nitrogen
+mkdir ~/.config/nitrogen/wallpapers
+cp ~/onedrive/Desktop/hydrogen_remix* ~/.config/nitrogen/wallpapers
+\:q
+paru -S insync
+insync start
+insync
+htop
+pacman -S htop
+sudo pacman -S htop
+htop
+cd onedrive/Desktop
+ls
+nitrogen
+nitrogen &
+nitrogen &
+paru -S libinput
+nv ~/.config/herbstluftwm
+cat ~/.config/herbstluftwm/autostart
+herbstclient layout
+herbstclient layout
+herbstclient layout
+nv ~/.config/herbstluftwm/autostart
+nv ~/.config/herbstluftwm/autostart
+paru -Ss fira-code
+paru -Ss nerd-fonts-fira-code
+paru -S nerd-fonts-fira-code
+ls
+startx
+startx
+ls
+paru -S unzip
+ls
+dcd
+cd downloads
+ls
+mv course_files_export.zip ~/onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems/1.\ Examinering
+ls
+cd ~/onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems
+cd 1.\ Examinering
+ls
+mv course_files_export.zip TEN
+cd TEN
+ls
+unzip course_files_export.zip
+ls
+cd ../
+mv TEN/* ./
+cd Exams
+ls
+cd .config
+ls
+cd polybar
+ls
+nv config
+cd
+ls
+cat todo.md
+echo "7. thunar" >> todo.md
+cd repos
+ls
+cd dotfiles
+ls
+make load-repo
+echo herbstluftwm >> include
+ls ~/.config

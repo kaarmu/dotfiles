@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/kaarmu/.config/herbstluftwm'
 let g:netrw_dirhist_5='/home/kaarmu/.config/nvim/plugin'
 let g:netrw_dirhist_4='/home/kaarmu/.config/nvim'
 let g:netrw_dirhist_3='/home/kaarmu/.config/nvim/plugin'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/home/kaarmu/.config/nvim'
 let g:netrw_dirhist_9='/home/kaarmu/.config/nvim/plugin'
 let g:netrw_dirhist_8='/home/kaarmu/.config/nvim'
 let g:netrw_dirhist_7='/home/kaarmu/.config/nvim/plugin'
-let g:netrw_dirhist_6='/home/kaarmu/.config/nvim'
