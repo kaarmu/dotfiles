@@ -1,319 +1,3 @@
-nvim .zshrc
-paru -Ss spaceship
-paru -Ss spaceship-prompt
-paru -S spaceship-prompt
-repos/dotfiles
-ls
-gp
-nvim config/nvim/nvim/init.vim
-exit
-python
-python data.py
-python
-python main.py
-python main.py
-python main.py
-python
-python main
-python main.py
- . /home/kaarmu/.local/share/virtualenvs/lab02-qkdLZw2W/bin/activate
-pipenv install
-ls
-firefox svm-2018.pdf
-firefox svm-2018.pdf &
-dolphin .
-nvim .
-nvim .
-exit
-cd repos/clicha
-cd ~/onedrive
-ls
-cd School
-ls
-cd KTH/Year\ 4/
-ls
-DD24
-DD2421\ -\ Machine\ Learning
-ls
-3.\ Moment
-ls
-cd lab02
-ls
-pipenv shell
-nvim
-nvim ~/.zshrc
-nvim
-nvim
-nvim
-python main.py
-paru -S t
-paru -S tk
-paru -S t
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
-python main.py
- . /home/kaarmu/.local/share/virtualenvs/lab02-qkdLZw2W/bin/activate
-nvim .
-exit
-ls
-onedrive/School/KTH/Year\ 4/DD2421\ -\ Machine\ Learning
-ls
-cd 3.\ Moment
-ls
-lab02
-ls
-nvim .
-pipenv shel
-nvim ~/.config/zsh/aliases
-pi
-ps
-nvim ~/.config/zsh/aliases
-clear
-source ~/.zshrc
-pips
-paru -S nordvpn-bin
-groupadd -r nordvo
-groupadd -r nordvpn
-gpasswd -a kaarmu nordvpn
-sudo gpasswd -a kaarmu nordvpn
-nordvpn login
-sudo nordvpn login
-paru -Syu
-systemctl enable nordvpnd
-systemctl start nordvpnd
-clear
-nordvpn login
-sudo nordvpn login
-nordvpn connect
-nordvpn connect
-sudo nordvpn connect
-ls /dev/video
-ls /dev/
-ls /dev/usb
-dmesg | tall
-dmesg | tail
-sudo dmesg | tail
-v4l2-ctl --list-devices
-v4l2-ctl --list-devicesudev
-v4l2-ctl --list-devicesudev -l
-v4l2-ctl -l
-journalctl --help
-journalctl
-pacman -Qs linux
-pacman -Syu
-insync
-insync show
-xdg-open Pictures/EASY_L1.png
-paru -Q insync
-paru -Syu insync-dolphin
-cd Desktop
-ls
-rm archlinux-2021.03.01-x86_64.iso
-ls
-rm archlinux-2021.03.01-x86_64.iso
-pytho
-python
-python
-python -i lab3.py
-pipenv shell
- . /home/kaarmu/.local/share/virtualenvs/lab03-VpPYegNp/bin/activate
-ls
-pipenv install sklearn
-pipi numpy scipy matplotlib sklearn seaborn
-py
-py -i lab3.py
-pytrho
-py -i lab3.py
-py lab3.py
-py lab3.py
-cd onedrive/School/KTH/Year\ 4/DD2421\ -\ Machine\ Learning/3.\ Moment
-ls
-cd lab03
-ls
-nvim lab3.py
-nvim lab
-nvim
-nvim
-nvim
-nvim
-nvim lab3.py
-nvim
-nvim
-nvim
-nvim
-nvim
-pips
- . /home/kaarmu/.local/share/virtualenvs/lab03-VpPYegNp/bin/activate
-nvim lab3.
-nvim lab3.py
-fg
-py lab3.py
-py lab3.py -i
-py -i lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-PWD
-$PWD
-echo $PWD
-\:q
-py lab3.py
-ls ~/Pictures
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-py lab3.py
-pipi notebook jupytext
-jupyter ~/Downloads/Linear\ Bayes\ Regression.
-jupyter ~/Downloads/Linear\ Bayes\ Regression.ipynb
-jupyter help
-jupyter -h
-jupyter notebook
-jupyter notebook ~/Downloads/Linear\ Bayes\ Regression.ipynb
-py lab3.py
-py lab3.py
- . /home/kaarmu/.local/share/virtualenvs/lab03-VpPYegNp/bin/activate
-nvim lab3.pt
-nvim lab3.py
-nvim
-nvim test.txt
-rm test.txt
-nvim ~/.config/nvim/init.vim
-\:q
-nvim
-ls
-nivm .nvimrc
-nvim .nvimrc
-ls
-ls .nvim
-nvim
-nvim ~/Downloads/Linear\ Bayes\ Regression.ipynb
-nvim ~/Downloads/Linear\ Bayes\ Regression.ipynb
-nvim lab3.py
-ping google.com
-cd ~/onedrive/School
-cd KTH
-cd Year\ 4/DD2421\ -\ Machine\ Learning
-cd 3.\ Moment
-cd lab03
-nvim lab3.py
-pips
-nvim lab3.py
-nvim lab3.py
-exit
-py 
-py lab3.py
-py lab3.py
-py *.py
-py *.py
-py *.py
-py *.py
-py *.py
-make main
-make main
-make main
-make main
-echo nvim >> dotinclude
-ls
-echo nvim >> dotinclude
-rm dotinclude
-echo nvim >> dotinclude
-s
-ls
-cat dotinclude
-make main
-make main
-make main
-make main
-make main
-make main
-make main
-ls ~/.config
-ls ~/.config
-make main
-make main
-make main
-make main
-make list
-make load-locals
-make load-locals
-make load-locals
-make load-locals
-echo neofetch >> dotinclude
-make load-locals
-ls ~/.local/share
-make list
-echo zsh >> dotinclude
-make list
-make list
-make load-locals
-make load-locals
-make load-locals
-make load-locals
-make load-locals
-make load-configs
-make install
-make install
-touch config
-touch locals
-make load-repo
-cp -r ~/.config/nvim /home/kaarmu/repos/dotfiles/config/nvim
-cp -r ~/.config/nvim /home/kaarmu/repos/dotfiles/config/
-exit
- . /home/kaarmu/.local/share/virtualenvs/lab03-VpPYegNp/bin/activate
-nvim ~/.config/zsh/aliases
-src
-src
-nv *.py
 nv *.py
 cd ~
 ls
@@ -1012,3 +696,346 @@ ls
 make load-repo
 echo herbstluftwm >> include
 ls ~/.config
+ls .config
+ls .config/autostart
+cd repos
+cd dotfiles
+echo kitty >> include
+echo nitrogen >> include
+echo polybar >> include
+make load-repo
+ls
+ls config
+gs
+echo local/nvim/undo >> .gitignore 
+gs
+cd repos/dotfiles
+ls
+cd local
+ls
+cd zsh
+cd plugins
+\ls
+rm * 
+rm * -f
+ls
+rm -rf docs
+sudo rm -rf docs
+sudo rm -rf highlighters
+ls
+sudo rm -rf images
+sudo rm -rf tests
+ls
+cd../
+cd ../
+cd ~/repos/dotfiles
+ls
+gs
+cd local/zsh/plugins
+rm -rf .g*
+sudo rm -rf .g*
+ls -a
+sudo rm -rf .editorconfig
+sudo rm -rf .revision-hash
+sudo rm -rf .version
+ls -a
+cd ~/repos/dotfiles
+ls
+gs
+cat .git
+cat .gitignore
+rm .gitignore
+echo "local/nvim/undo/" >> .gitignore
+echo "local/nvim/plugged/" >> .gitignore
+echo "local/nvim/.netrwhist" >> .gitignore
+echo "local/nvim/.shada/" >> .gitignore
+echo "local/nvim/shada/" >> .gitignore
+echo "local/zsh/history" >> .gitignore
+echo "local/zsh/plugins/" >> .gitignore
+nv .gitignore
+ls
+cd repos/dotfiles
+gs
+make load-repo
+gs
+ga .
+gc "Arch surface"
+git config --global user.email "kajarfvidsson@gmail.com"
+git config --global user.name "Kaj Munhoz Arfvidsson"
+gc "Arch surface"
+gP
+cd ../
+ls
+cd ../
+startx
+startx
+herbstclient
+herbstclient layout 
+herbstclient layout 
+
+herbstclient layout 
+startx
+nm
+nm-connection-editor
+nmcli d wifi scan
+nmcli d wifi list
+nmcli d wifi connect Mälartåg-wifi
+paru -Ss zathura
+paru -S zathura
+nv .zshrc
+exit
+this is some text 
+nv .zshrc
+ls
+clear
+zathura
+cd /usr/li
+cd /usr/lib
+ls
+ls za*
+sudo mkdir zathura
+ls za*
+ls zathura
+ls
+\:q
+clear
+zathura
+cd ~
+ls
+nv 
+nv 
+cd hybrid/1.\ Examinering/Exams
+ls
+cd June\ 2019
+ls
+ln -s onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems ~/hybrid
+ls
+cd hybrid
+ls
+cd 1`
+cd 1.\ Examinering
+ls
+cd TEN
+../Exams
+ls
+March\ 201
+March\ 2019
+ls
+ls
+ls
+cd ../
+mv ./*/* .
+ls
+ls June\ 201
+ls June\ 2019
+ls June\ 2017
+ls March\ 2019
+ls March\ 2017
+ls March\ 2018
+ls solutions
+ls
+rmdir Ju*
+rmdir Ma*
+ls
+ls
+ls solutions
+../
+ls
+rm -r Exams
+ls
+unzip course_files_export.zip
+cd Exams
+ls
+cd
+cat todo.md
+echo "8. zathura" >> todo.md
+echo "9. refind" >> todo.md
+cd hybrid
+ls
+cd 1.\ Examinering
+cd Exams
+ls
+paru -S spotify
+cd hybrid
+cd 1.\ Examinering/Exams/March\ 2019
+ls
+nv ans.md
+python
+py
+nv
+man zathura
+ls
+ls -a
+paru -S zathura-pdf-mupdf
+man zathura
+nv
+nmcli d wifi connect "Game of 2.4"
+nmcli d wifi connect "Game of 2.4" password Stallinhoz8
+cd hybrid
+cd 1.\ Examinering/Exams
+ls
+cd March\ 201
+cd March\ 2019
+ls
+zathura exam_march_19.pdf&
+zathura exam_march_19.pdf &
+zathura exam_march_19.pdf &
+zathura exam_march_19.pdf &
+cd ../../..
+cd 4.\ Slides
+ls
+zathura lec06_VT21.pdf &
+htop
+hybrid/1.\ Examinering/Exams
+ls
+cd June\ 2019
+ls
+cd ../
+ls
+ls March\ 2019
+cd March\ 201
+cd March\ 2019
+ls
+nv ans.md
+python
+cd hybrid/1.\ Examinering/Exams/March\ 2019
+ls
+nv ans.md
+py
+paru -S st
+pacman -Ss st
+pacman -Ss simple terminal
+pacman -S st
+sudo pacman -S st
+paru -S st
+cd .config/
+ls
+du -sh /
+sudo du -sh /
+sudo du -sh /*
+sudo du -sh /home/*
+sudo du -sh ~/*
+sudo du -sh /usr/*
+sudo du -sh /usr/lib/*
+du --help
+sort --help
+sudo du -sh /usr/lib/* | sort -h
+sudo du -sh /usr/lib/modules/* | sort -h
+startx
+.config/herbstluftwm
+nv autostart
+nv autostart
+startx
+/etc/X11/xorg.conf.d
+ls
+/etc/X11/xorg.conf
+Xorg :0 -configure
+Xorg :2 -configure
+man zathurarc
+mkdir ~/.config/zathura
+nv ~/.config/zathura/zathurarc
+nv 
+nv 
+nv 
+hybrid/1.\ Examinering/Exams/March\ 2019
+grep routh ./*
+ls
+grep rou ./*
+cd ../
+cd ../..
+4.\ Slides
+ls
+grep rou ./*
+grep Rou ./*
+grep Rou* ./*
+grep criterion ./*
+hybrid/4.\ Slides
+grep stab* ./*I
+grep stab* ./*
+grep stab ./*
+nv
+nv
+hybrid/4.\ Slides
+grep Zeno ./*
+grep behaviour ./*
+ls
+grep zeno ./*
+py
+\:q
+exitg
+exit
+cd hybrid/4.\ Slides
+grep obser ./*
+grep Os ./*
+grep Obs ./*
+grep observ ./*
+hybrid/4.\ Slides
+grep bisimilar ./*
+paru -S pdfgrep
+pdfgrep bisimilar ./*
+cd ../
+ls
+cd ../
+cower
+paru -Q
+paru -Syu
+paru -h
+paru -Sh
+paru -Qh
+paru -Dh
+paru -Qu
+paru -Syu
+\:q
+nv
+nv
+ls -1 /sys/class/power
+ls -1 /sys/class/power_supply
+uptime
+uptime | grep -ohe 'load average[s:][: ].*'
+uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3" "$4" "$5"," }'
+uptime
+uptime
+uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3" "$4" "$5"," }'
+uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3" "$4" "$5"," }' | sed 's/,//g'
+nv
+nv
+hwclock --show
+hwclock --verbose
+sudo hwclock --show
+hwclock --systohc
+sudo hwclock --systohc
+timedatectl
+timedatectl set-local-rtc 1
+sudo timedatectl set-local-rtc 1
+sudo hwclock --systohc
+timedatectl
+sudo timedatectl set-local-rtc 0
+sudo timedatectl --help
+sudo timedatectl set-time --help
+sudo timedatectl set-time "2021-03-14 04:29:00"
+paru -S picom-jonaburg-git
+nv
+.config/
+ls
+cd dconf
+ls
+cat user
+nv
+ls .config
+mkdir .config/picom
+nv .config/picom/picom.conf
+nv
+paru -Syu
+cd repos
+cd dotfiles
+ls ~/.config
+ls ~/.config/autostart
+cat include
+echo picom >> include
+echo zathura >> include
+ls ~/.local
+ls ~/.local/share
+mv ~/.config/nitrogen ~/.local/share/
+ls ~/.local/share
+gs
+gs

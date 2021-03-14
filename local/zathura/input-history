@@ -1,0 +1,62 @@
+:open /home/kaarmu/hybrid/1.\ Examinering/Exams/June\ 2017/
+:open /home/kaarmu/hybrid/1.\ Examinering/Exams/March\ 2019/*pdf
+:open /home/kaarmu/hybrid/1.\ Examinering/Exams/June\ 2019/exam_june_19.pdf
+:help fit
+/preemptyive
+/pree
+/util
+/len
+/earliesr
+/earlies
+/respo
+/edf
+:open /home/kaarmu/hybrid/4.\ Slides/lec06_VT21.pdf
+:open /home/kaarmu/hybrid/4.\ Slides/lec07_VT21.pdf
+/rate
+/EDF
+/worst
+:help
+:! 
+:invert
+:inv
+:rec
+/routh
+:open /home/kaarmu/onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems/4.\ Slides/lec08_VT21.pdf
+:reload
+:redraw
+:! reload
+:! redraw
+:open /home/kaarmu/hybrid/4.\ Slides/lec08_VT21.pdf
+:open /home/kaarmu/hybrid/1.\ Examinering/Exams/March\ 2019/exam_march_19.pdf
+:q
+:open /home/kaarmu/hybrid/1.\ Examinering/Exams/March\ 2019/exam_march_19_sol.pdf
+:open /home/kaarmu/hybrid/4.\ Slides/lec05_VT21.pdf
+/rout
+:open /home/kaarmu/hybrid/4.\ Slides/lec02_VT21b.pdf
+/rou
+:open /home/kaarmu/hybrid/4.\ Slides/lec03
+:open /home/kaarmu/hybrid/4.\ Slides/lec03_VT21.pdf
+/criterion
+:open /home/kaarmu/hybrid/4.\ Slides/lec04
+/Rou
+:open /home/kaarmu/hybrid/4.\ Slides/lec10_VT21.pdf
+/Ro
+/Routh
+:open /home/kaarmu/hybrid/4.\ Slides/lec04_VT21.pdf
+/stab
+:nohl
+:open /home/kaarmu/hybrid/4.\ Slides/lec09_VT21.pdf
+/zeno
+/observ
+:1 
+:! kitty
+:! kitty .
+:! kitty ../
+:! echo $PWD
+:! echo $pwd
+:! echo $XDG_CONFIG_HOME
+:exec
+:exec echo "this"
+:! ls
+:open /home/kaarmu/hybrid/4.\ Slides/lec12_VT21.pdf
+/bisimilar

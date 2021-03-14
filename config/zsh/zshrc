@@ -14,6 +14,8 @@ source $HOME/.config/user-dirs.dirs
 
 # === Raw zsh stuff ===
 
+bindkey -e
+
 # Enable colors and change prompt
 autoload -U colors && colors
 
