@@ -114,7 +114,7 @@ font-0 = "Fira Code Nerd Font:size=16;4"
 ; modules-right = battery wlan eth memory cpu filesystem xkeyboard date
 ;
 ; Desktop modules:
-modules-left = ewmh aur-updates menu-apps
+modules-left = power-menu ewmh aur-updates menu-apps
 modules-center = alsa
 modules-right = wlan eth memory cpu filesystem xkeyboard date
 
@@ -585,6 +585,20 @@ menu-2-1-exec = caprine
 menu-2-2 = Spotify
 menu-2-2-exec = spotify
 
+[module/power-menu]
+type = custom/menu
+format = <label-toggle><menu> |
+expand-right = true
+
+label-open = " ⏻ "
+label-close = " ⏻ "
+label-separator = " "
+menu-0-0 = " N "
+menu-0-0-exec = #power-menu.close.1
+menu-0-1 = " Y "
+menu-0-1-exec = "shutdown now"
+menu-0-2 = " R "
+menu-0-2-exec = "reboot"
 
 
 
