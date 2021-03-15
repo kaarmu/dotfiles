@@ -6,11 +6,11 @@ hc() {
     herbstclient "$@"
 }
 
-source ./onedark.sh
+source $XDG_CONFIG_HOME/herbstluftwm/onedark.sh
 
 hc emit_hook reload
 
-xsetroot -solid darkgrey
+xsetroot -solid $darkgrey
 nitrogen --restore &
 
 # remove all existing keybindings

@@ -74,7 +74,7 @@ volume-max = #bf616a
 ;alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 40
 ;offset-x = 1%
@@ -109,14 +109,14 @@ font-0 = "Fira Code Nerd Font:size=16;4"
 ; $ hostnamectl | sed -E 's/(.*: )(.*)/\2/g' | head -n 1
 ;
 ; Surface modules:
-modules-left = power-menu ewmh aur-updates menu-apps
-modules-center = xbacklight alsa
-modules-right = battery wlan eth memory cpu filesystem xkeyboard date
+; modules-left = power-menu ewmh aur-updates menu-apps
+; modules-center = xbacklight alsa
+; modules-right = battery wlan eth memory cpu filesystem xkeyboard date
 ;
 ; Desktop modules:
-; modules-left = power-menu ewmh aur-updates menu-apps
-; modules-center = alsa
-; modules-right = wlan eth memory cpu filesystem xkeyboard date
+modules-left = power-menu ewmh aur-updates menu-apps
+modules-center = alsa
+modules-right = wlan eth memory cpu filesystem xkeyboard date
 
 tray-position = right
 tray-padding = 2
