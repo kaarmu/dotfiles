@@ -104,11 +104,19 @@ font-0 = "Fira Code Nerd Font:size=16;4"
 ; font-3 = unifont:fontformat=truetype:size=8:antialias=false;0
 ; font-4 = siji:pixelsize=10;1
 
-modules-left = ewmh aur-updates
-modules-center = xbacklight alsa
-modules-right = battery wlan eth memory cpu filesystem xkeyboard date
-
-
+; Have some sort of script that auto detects the machine and chooses
+; modules. This command retreives the hostname:
+; $ hostnamectl | sed -E 's/(.*: )(.*)/\2/g' | head -n 1
+;
+; Surface modules:
+; modules-left = ewmh aur-updates
+; modules-center = xbacklight alsa
+; modules-right = battery wlan eth memory cpu filesystem xkeyboard date
+;
+; Desktop modules:
+modules-left = ewmh aur-updates menu-apps
+modules-center = alsa
+modules-right = wlan eth memory cpu filesystem xkeyboard date
 
 tray-position = right
 tray-padding = 2
@@ -467,22 +475,36 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = ▁
+ramp-signal-1 = ▂
+ramp-signal-2 = ▃
+ramp-signal-3 = ▄
+ramp-signal-4 = ▅
+ramp-signal-5 = ▆
+ramp-signal-6 = ▇
+ramp-signal-7 = █
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = net0
+interface = enp24s0
 interval = 3.0
 
+; All labels support the following tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+
+format-connected = <label-connected>
 format-connected-underline = #4B5665
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected = " %local_ip%"
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -498,7 +520,7 @@ format-volume = <label-volume> <bar-volume>
 label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = " "
+format-muted-prefix = "婢 "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
@@ -518,5 +540,52 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/menu-apps]
+type = custom/menu
+
+; If true, <label-toggle> will be to the left of the menu items (default).
+; If false, it will be on the right of all the items.
+expand-right = true
+
+label-open = " > "
+label-close = " < "
+label-separator = " | "
+format = <label-toggle><menu> |
+
+; "menu-LEVEL-N" has the same properties as "label-NAME" with
+; the additional "exec" property
+;
+; Commands will be executed using "/bin/sh -c $COMMAND"
+
+menu-0-0 = Update
+menu-0-0-exec = $TERMINAL paru -Syu
+menu-0-1 = Configs
+menu-0-1-exec = #menu-apps.open.1
+menu-0-2 = Apps
+menu-0-2-exec = #menu-apps.open.2
+
+menu-1-0 = HLWM
+menu-1-0-exec = kitty nvim ~/.config/herbstluftwm/autostart
+menu-1-1 = Kitty
+menu-1-1-exec = kitty nvim ~/.config/kitty/kitty.conf
+menu-1-2 = Neovim
+menu-1-2-exec = kitty nvim ~/.config/nvim/init.vim
+menu-1-3 = Polybar
+menu-1-3-exec = kitty nvim ~/.config/polybar/config
+menu-1-4 = Zsh
+menu-1-4-exec = kitty nvim ~/.config/zsh/zshrc
+menu-1-5 = Zathura
+menu-1-5-exec = kitty nvim ~/.config/zathura/zathurarc
+
+menu-2-0 = Firefox
+menu-2-0-exec = firefox
+menu-2-1 = Caprine
+menu-2-1-exec = caprine
+menu-2-2 = Spotify
+menu-2-2-exec = spotify
+
+
+
 
 ; vim:ft=dosini
