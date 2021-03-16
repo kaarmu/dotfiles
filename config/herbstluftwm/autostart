@@ -6,7 +6,11 @@ hc() {
     herbstclient "$@"
 }
 
-source $XDG_CONFIG_HOME/herbstluftwm/onedark.sh
+so() {
+    source "$XDG_CONFIG_HOME/herbstluftwm/$@"
+}
+
+so onedark.sh
 
 hc emit_hook reload
 
@@ -20,11 +24,13 @@ hc keyunbind --all
 # if you have a super key you will be much happier with Mod set to Mod4
 Mod=Mod4
 
+# Applications
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
-hc keybind $Mod-w close_or_remove
+hc keybind $Mod-w close_and_remove
 hc keybind $Mod-Shift-Return spawn $TERMINAL
 hc keybind $Mod-Return spawn dmenu_run -fn "Fira Code:size=14" -p "dmenu:"
+hc keybind $Mod-b spawn firefox
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -116,52 +122,83 @@ hc keybind $Mod-Shift-Tab   cycle_all -1
 hc keybind $Mod-c cycle
 hc keybind $Mod-i jumpto urgent
 
-# theme
-hc set always_show_frame on
-hc set frame_bg_transparent on
-hc set frame_transparent_width 60
-hc set frame_bg_normal_color $darkgrey
-hc set frame_bg_active_color $blue
-hc set frame_normal_opacity 40
-hc set frame_active_opacity 40
-hc set frame_border_normal_color $black
-hc set frame_border_active_color $darkyellow
-hc set frame_border_width 5
-hc set frame_padding 10
+# APPEARANCE
+# hc set always_show_frame                  false
+# hc set auto_detect_monitors               false
+# hc set auto_detect_panels                 true
+# hc set default_direction_external_only    false
+hc set default_frame_layout               horizontal
+# hc set focus_crosses_monitor_boundaries   true
+hc set focus_follows_mouse                true
+# hc set focus_stealing_prevention          true
 
-# frame border
-# ---------------------
-# frame padding / bg
-# ---------------------
-# outer segment
-# ---------------------
-# padding / color
-# ---------------------
-# inner segment
-# ---------------------
-# application
+hc set frame_gap                     50
+hc set frame_border_active_color     $blue
+hc set frame_border_normal_color     $black
+hc set frame_border_width            4
+# hc set frame_border_inner_color      black
+# hc set frame_border_inner_width      0
+hc set frame_bg_active_color         $black
+hc set frame_bg_normal_color         $black
+hc set frame_active_opacity          0
+hc set frame_normal_opacity          40
+hc set frame_bg_transparent          false
+hc set frame_transparent_width       0
+hc set frame_padding                 0
 
-hc attr theme.tiling.reset 1
+# hc set gapless_grid                  true
+# hc set hide_covered_windows          false
+# hc set monitors_locked               0
+# hc set mouse_recenter_gap            0
+# hc set pseudotile_center_threshold   10
+# hc set raise_on_click                true
+# hc set raise_on_focus                false
+# hc set raise_on_focus_temporarily    false
+hc set smart_frame_surroundings      true
+# hc set smart_window_surroundings     false
+# hc set snap_distance                 10
+# hc set snap_gap                      5
+hc set swap_monitors_to_get_tag      false
+hc set tree_style '╾│ ├└╼─┐'
+# hc set update_dragged_clients        false
+# hc set verbose                       false
+
+# window_border_active_color    unkown
+# window_border_inner_color     unkown
+# window_border_inner_width     unkown
+# window_border_normal_color    unkown
+# window_border_urgent_color    unkown
+# window_border_width           unkown
+# window_gap                    0
+# wmname                        herbstluftwm
+
+
+
+# THEMES: active, normal, floating, fullscreen, minimal, tiling, urgent
+hc attr theme.active.reset 1
+hc attr theme.normal.reset 1
 hc attr theme.floating.reset 1
-hc attr theme.active.color '#9fbc00'
-hc attr theme.normal.color '#454545'
-hc attr theme.urgent.color orange
-hc attr theme.inner_width 0
-hc attr theme.inner_color black
-hc attr theme.border_width 0
-hc attr theme.floating.border_width 0
-hc attr theme.floating.outer_width 0
-hc attr theme.floating.outer_color black
-hc attr theme.active.inner_color '#3E4A00'
-hc attr theme.active.outer_color '#3E4A00'
-hc attr theme.background_color '#141414'
+hc attr theme.fullscreen.reset 1
 
-hc set window_gap 8
-hc set smart_window_surroundings off
-hc set smart_frame_surroundings on
-hc set mouse_recenter_gap 0
-hc set focus_crosses_monitor_boundaries 1
-hc set swap_monitors_to_get_tag 1
+# hc attr theme.title_color       black
+# hc attr theme.title_font        fixed
+# hc attr theme.title_height      0
+# hc attr theme.outer_color       black
+# hc attr theme.outer_width       0
+hc attr theme.color             $black
+hc attr theme.border_width      2
+    hc attr theme.active.color             $blue
+    hc attr theme.active.border_width      2
+# hc attr theme.inner_color       black
+# hc attr theme.inner_width       0
+# hc attr theme.padding_bottom    0
+# hc attr theme.padding_left      0
+# hc attr theme.padding_right     0
+# hc attr theme.padding_top       0
+# hc attr theme.background_color  black
+# hc attr theme.tight_decoration  false
+
+
 
 # rules
 hc unrule -F
@@ -173,8 +210,6 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 
-hc set tree_style '╾│ ├└╼─┐'
-
 # unlock, just to be sure
 hc unlock
 
@@ -184,7 +219,7 @@ hc unlock
 hc detect_monitors
 
 # find the panel
-panel=~/.config/herbstluftwm/panel.sh
+panel=$XDG_CONFIG_HOME/herbstluftwm/panel.sh
 [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
 for monitor in $(hc list_monitors | cut -d: -f1) ; do
     # start it on each monitor

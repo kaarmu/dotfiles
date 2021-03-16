@@ -8,13 +8,21 @@ vnoremap <silent> <leader><leader> <Esc>
 cnoremap <silent> <leader><leader> <Esc>
 tnoremap <silent> <leader><leader> <C-\><C-n>
 
-        " edit/source configuration
+        " start vim
+nnoremap <silent> <leader>sv :Startify<CR>
+        " edit config
 nnoremap <silent> <leader>ec :e $MYVIMRC<CR>
+        " edit keyboard (config)
+nnoremap <silent> <leader>ek :e $XDG_CONFIG_HOME/nvim/plugin/keybinds.vim<CR>
+        " source config
 nnoremap <silent> <leader>sc :source $MYVIMRC<CR>
+        " source keyboard (config)
+nnoremap <silent> <leader>sk :source $XDG_CONFIG_HOME/nvim/plugin/keybinds.vim<CR>
 
         " Toggle ---
 nnoremap <silent> <leader>Tn :set rnu!<CR>:set nu!<CR>
-nnoremap <silent> <leader>Tc :set colorcolumn!<CR>
+nnoremap <silent> <leader>Tc :execute "set colorcolumn="
+                  \ . (&colorcolumn == "" ? "80" : "")<CR>
 nnoremap <silent> <leader>Tw :set wrap!<CR>
 nnoremap <silent> <leader>Tl :set cursorline!<CR>
 
@@ -83,6 +91,9 @@ tnoremap <A-.> <C-\><C-n><cmd>tabnext<CR>
 tnoremap <A-,> <C-\><C-n><cmd>tabprevious<CR>
 
 " Edit                                                          {{{1
+nnoremap <silent> <leader>o o<Esc>k
+nnoremap <silent> <leader>O O<Esc>j
+
 
 " Windows (splits)                                              {{{1
         " (create) window right/left/down/up
