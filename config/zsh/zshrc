@@ -1,11 +1,10 @@
 # === TODO ===
 # - check out "neofetch", like Brodie Robertson
-# - Make "Load profile" better
 
-# === ... ===
+# === ==== ===
 
 # Load profile
-export TERMINAL=kitty
+export TERM=kitty
 export EDITOR=nvim
 export XDG_CONFIG_HOME=~/.config
 export XDG_DATA_HOME=~/.local/share

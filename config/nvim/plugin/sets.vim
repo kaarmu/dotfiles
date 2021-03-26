@@ -14,7 +14,7 @@ set noerrorbells    " No warning sounds ofc
 set nonu nornu      " No numbering at start
 set noswapfile      " Don't have stupid swaps
 set nobackup        " Don't need backup either
-set undofile        " Default location is XDG_DATA_HOME/nvim/undo
+" set undofile        " Default location is XDG_DATA_HOME/nvim/undo
 set termguicolors   " Enable 24-bit RGB color in terminal
 set signcolumn=yes  " Always show the sign column
 highlight SignColumn guibg=None
@@ -44,6 +44,7 @@ set backspace=indent,eol,start  " <BS> works on newlines as well
 
 set nohlsearch  " Start without search highlighting
 set incsearch   " Search while writing
+set smartcase   " Smart case-insensitive search
 
 set completeopt=menuone,noinsert,noselect
 set pumheight=10

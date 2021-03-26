@@ -74,12 +74,12 @@ volume-max = #bf616a
 ;alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 40
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 8.0
+radius = 10
 fixed-center = true
 seperator =
 
@@ -92,8 +92,7 @@ line-color = #f00
 border-size = 0
 border-color = #00000000
 
-padding-left = 1
-padding-right = 1
+padding = 0
 
 module-margin-left = 1
 module-margin-right = 1
@@ -109,14 +108,14 @@ font-0 = "Fira Code Nerd Font:size=16;4"
 ; $ hostnamectl | sed -E 's/(.*: )(.*)/\2/g' | head -n 1
 ;
 ; Surface modules:
-modules-left = power-menu ewmh aur-updates menu-apps
-modules-center = xbacklight alsa
-modules-right = battery wlan eth memory cpu filesystem xkeyboard date
+; modules-left = power-menu ewmh aur-updates menu-apps
+; modules-center = xbacklight alsa
+; modules-right = battery wlan eth memory cpu filesystem xkeyboard date
 ;
 ; Desktop modules:
-; modules-left = power-menu ewmh aur-updates menu-apps
-; modules-center = alsa
-; modules-right = wlan eth memory cpu filesystem xkeyboard date
+modules-left = power-menu ewmh aur-updates menu-apps
+modules-center = alsa
+modules-right = wlan eth memory cpu filesystem xkeyboard date
 
 tray-position = right
 tray-padding = 2
@@ -124,14 +123,9 @@ tray-background = ${colors.background}
 
 ;wm-restack = bspwm
 ;wm-restack = i3
+wm-name = herbstluftwm
 
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+enable-ipc = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -320,6 +314,7 @@ icon-4 = 5;
 icon-5 = 6;
 icon-6 = 7;
 icon-7 = 8;
+icon-8 = 9;
 #icon-8 = 9;
 #icon-9 = 10;
 #icon-default = " "
@@ -559,7 +554,7 @@ format = <label-toggle><menu> |
 ; Commands will be executed using "/bin/sh -c $COMMAND"
 
 menu-0-0 = Update
-menu-0-0-exec = $TERMINAL paru -Syu
+menu-0-0-exec = $TERM paru -Syu
 menu-0-1 = Configs
 menu-0-1-exec = #menu-apps.open.1
 menu-0-2 = Apps
