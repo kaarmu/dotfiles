@@ -75,10 +75,10 @@ volume-max = #bf616a
 
 [bar/example]
 monitor = ${env:MONITOR:}
-width = 100%
+width = 99%
 height = 40
-;offset-x = 1%
-;offset-y = 1%
+offset-x = 0.5%
+offset-y = 0.5%
 radius = 10
 fixed-center = true
 seperator =
@@ -92,12 +92,12 @@ line-color = #f00
 border-size = 0
 border-color = #00000000
 
-padding = 0
+padding = 0 2
 
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Fira Code Nerd Font:size=16;4"
+font-0 = "Fira Code Nerd Font:size=18;4"
 ; font-1 = "Fira Code Nerd Font:size=16;3"
 ; font-2 = fixed:pixelsize=10;1
 ; font-3 = unifont:fontformat=truetype:size=8:antialias=false;0
@@ -413,7 +413,7 @@ interval = 1
 label = %percentage_used%%
 
 format = <label> <ramp-used>
-format-prefix = "  "
+format-prefix = " "
 format-prefix-foreground = #3384d0
 format-underline = #4B5665
 format-foreground = ${colors.foreground}
@@ -497,7 +497,7 @@ interval = 3.0
 
 format-connected = <label-connected>
 format-connected-underline = #4B5665
-format-connected-prefix = " "
+; format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = " %local_ip%"
 
@@ -507,12 +507,16 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
+[module/pulseaudio]
+type = internal/pulseaudio
+
+sink =
 
 [module/alsa]
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+label-volume = Vol
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = "婢 "
@@ -582,19 +586,16 @@ menu-2-2-exec = spotify
 
 [module/power-menu]
 type = custom/menu
-format = <label-toggle><menu> |
+format = " <label-toggle><menu> |"
 expand-right = true
 
 label-open = " ⏻ "
 label-close = " ⏻ "
 label-separator = " "
-menu-0-0 = " N "
-menu-0-0-exec = #power-menu.close.1
-menu-0-1 = " Y "
-menu-0-1-exec = "shutdown now"
-menu-0-2 = " R "
-menu-0-2-exec = "reboot"
-
+menu-0-0 = " Shutdown "
+menu-0-0-exec = "shutdown now"
+menu-0-1 = " Reboot "
+menu-0-1-exec = "reboot"
 
 
 ; vim:ft=dosini

@@ -9,11 +9,19 @@
 " Installed Plugins                                                         {{{1
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Plug 'daeyun/vim-matlab'
+Plug 'sotte/presenting.vim'
+Plug 'gu-fan/riv.vim'
+
 " *-- Appearance
 Plug 'morhetz/gruvbox'
-Plug 'lifepillar/vim-gruvbox8'
+" Plug 'lifepillar/vim-gruvbox8'
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'nightsense/carbonized'
+Plug 'nightsense/snow'
+Plug 'wadackel/vim-dogrun'
+Plug 'co1ncidence/mountaineer.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'mhinz/vim-startify'

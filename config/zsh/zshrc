@@ -4,7 +4,7 @@
 # === ==== ===
 
 # Load profile
-export TERM=kitty
+export TERM=xterm-kitty
 export EDITOR=nvim
 export XDG_CONFIG_HOME=~/.config
 export XDG_DATA_HOME=~/.local/share

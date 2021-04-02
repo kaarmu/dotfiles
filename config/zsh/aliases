@@ -18,7 +18,7 @@ alias la='ls -A'
 alias nv="nvim"
 
 # filemanager
-alias n='nnn'
+alias n='nnn -de'
 
 # Sound
 alias pm='pulsemixer'

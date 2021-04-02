@@ -21,10 +21,12 @@ nnoremap <silent> <leader>sk :source $XDG_CONFIG_HOME/nvim/plugin/keybinds.vim<C
 
         " Toggle ---
 nnoremap <silent> <leader>Tn :set rnu!<CR>:set nu!<CR>
+nnoremap <silent> <leader>Tw :set wrap!<CR>
 nnoremap <silent> <leader>Tc :execute "set colorcolumn="
                   \ . (&colorcolumn == "" ? "80" : "")<CR>
-nnoremap <silent> <leader>Tw :set wrap!<CR>
 nnoremap <silent> <leader>Tl :set cursorline!<CR>
+nnoremap <silent> <leader>Ts :execute "set laststatus="
+                  \ . (&laststatus == "0" ? "1" : "0")<CR>
 
         " search abort
 nnoremap <silent> <leader>sa :nohlsearch<CR>
