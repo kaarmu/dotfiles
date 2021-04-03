@@ -23,12 +23,13 @@ hc keyunbind --all
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
 Mod=Mod4
+Term=kitty
 
 # Applications
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-w close_or_remove
-hc keybind $Mod-Shift-Return spawn $TERM
+hc keybind $Mod-Shift-Return spawn $Term
 # hc keybind $Mod-Return spawn dmenu_run -fn "Fira Code:size=14" -p "dmenu:"
 hc keybind $Mod-p spawn rofi -modi drun -show combi
 hc keybind $Mod-b spawn firefox

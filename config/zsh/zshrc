@@ -13,8 +13,6 @@ source $HOME/.config/user-dirs.dirs
 
 # === Raw zsh stuff ===
 
-bindkey -e
-
 # Enable colors and change prompt
 autoload -U colors && colors
 
@@ -38,23 +36,21 @@ autoload -Uz compinit
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 # End of lines added by compinstall
 
-# Move forw/backw with ctrl-LArrw, ctrl-RArrw
+# === Keybindings ===
+
+# Emacs style keybindings
+bindkey -e
+
+# Move forw/backw with ctrl-LArrow, ctrl-RArrow
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 # === Aliases and minor tweaks ===
 
-# Alias definitions
-if [ -f $XDG_CONFIG_HOME/zsh/aliases ]; then
-    . $XDG_CONFIG_HOME/zsh/aliases
-fi
-
-# Function definitions
-if [ -f $XDG_CONFIG_HOME/zsh/funcs ]; then
-    . $XDG_CONFIG_HOME/zsh/funcs
-fi
-
-# === zsh plugins and themes ===
+# Source all scripts in plugins
+for f in $XDG_CONFIG_HOME/zsh/plugins/*; do
+    source $f
+done
 
 # Enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -63,6 +59,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias dir='dir --color=auto'
     alias grep='grep --color=auto'
 fi
+
+# === Spaceship ===
 
 # Load all plugins defined below.
 # Plugins must be in $XDG_DATA_HOME/zsh/plugins
