@@ -132,7 +132,7 @@ tag_keys=( {1..9} 0 )
 hc rename default "${tag_names[0]}" || true
 for i in "${!tag_names[@]}" ; do
     hc add "${tag_names[$i]}"
-    hc load '(clients horizontal:0)'
+    hc load $i '(clients horizontal:0)'
     key="${tag_keys[$i]}"
     if ! [ -z "$key" ] ; then
         hc keybind "$Mod-$key" use_index "$i"
@@ -153,7 +153,7 @@ hc keybind $Mod-g       unlock_tag
 # hc set auto_detect_monitors               false
 # hc set auto_detect_panels                 true
 # hc set default_direction_external_only    false
-hc set default_frame_layout               vertical # horizontal
+hc set default_frame_layout               horizontal
 # hc set focus_crosses_monitor_boundaries   true
 hc set focus_follows_mouse                true
 # hc set focus_stealing_prevention          true

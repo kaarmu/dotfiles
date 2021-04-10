@@ -1,1 +1,3 @@
+#! /bin/sh
+
 export NNN_PLUG="l:launch"

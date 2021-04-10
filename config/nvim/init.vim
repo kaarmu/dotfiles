@@ -7,11 +7,8 @@
 "       - vim-bujo
 "
 " Installed Plugins                                                         {{{1
-call plug#begin('~/.local/share/nvim/plugged')
 
-" Plug 'daeyun/vim-matlab'
-Plug 'sotte/presenting.vim'
-Plug 'gu-fan/riv.vim'
+call plug#begin('~/.local/share/nvim/plugged')
 
 " *-- Appearance
 Plug 'morhetz/gruvbox'
@@ -31,6 +28,7 @@ Plug 'ryanoasis/vim-devicons'
 " Plug '9mm/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-signify'
+Plug 'gu-fan/riv.vim'
 
 " *-- Git
 Plug 'tpope/vim-fugitive'
@@ -38,10 +36,15 @@ Plug 'tpope/vim-fugitive'
 " *-- Better folding
 Plug 'tmhedberg/SimpylFold'
 
-" *-- Telescope
+" *-- Telescopie
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" *-- Apps
+Plug 'sotte/presenting.vim'
+" Plug 'daeyun/vim-matlab', { 'do': '<cmd>UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins' }
 
 " *-- LSP
 Plug 'neovim/nvim-lspconfig'
