@@ -24,17 +24,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 
-" *-- Nice to have
+" *-- Editing
 " Plug '9mm/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-signify'
+Plug 'tmhedberg/SimpylFold'
+
 Plug 'gu-fan/riv.vim'
+Plug 'zah/nim.vim'
 
 " *-- Git
 Plug 'tpope/vim-fugitive'
-
-" *-- Better folding
-Plug 'tmhedberg/SimpylFold'
 
 " *-- Telescopie
 Plug 'nvim-lua/popup.nvim'
@@ -43,13 +43,13 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " *-- Apps
 Plug 'sotte/presenting.vim'
-" Plug 'daeyun/vim-matlab', { 'do': '<cmd>UpdateRemotePlugins' }
-Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins' }
+" Plug 'daeyun/vim-matlab', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
+Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 
 " *-- LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
-Plug 'tjdevries/nlua.nvim'
+" Plug 'tjdevries/nlua.nvim'
 
 call plug#end()
 

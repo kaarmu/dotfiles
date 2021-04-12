@@ -208,6 +208,7 @@ hc attr theme.fullscreen.reset 1
 
 # hc attr theme.title_color       black
 # hc attr theme.title_font        fixed
+
 # hc attr theme.title_height      0
 # hc attr theme.outer_color       black
 # hc attr theme.outer_width       0
