@@ -20,12 +20,12 @@ let g:onedark_terminal_italics=1
 " let g:airline_theme='onedark'
 let g:airline_theme='snow_dark'
 
-colorscheme snow
-
 if strftime('%H') >= 7 && strftime('%H') < 19 && 0
     set background=light
 else
     set background=dark
 endif
+
+colorscheme snow
 
 " ==============================================================================

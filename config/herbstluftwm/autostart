@@ -10,7 +10,7 @@ so() {
     source "$XDG_CONFIG_HOME/herbstluftwm/$@"
 }
 
-so onedark.sh
+so snow.sh
 
 hc emit_hook reload
 
@@ -181,7 +181,7 @@ hc set frame_padding                 0
 # hc set raise_on_focus                false
 # hc set raise_on_focus_temporarily    false
 hc set smart_frame_surroundings      false
-hc set smart_window_surroundings     true
+hc set smart_window_surroundings     false
 hc set snap_distance                 15
 hc set snap_gap                      10
 hc set swap_monitors_to_get_tag      false
@@ -195,7 +195,7 @@ hc set tree_style '╾│ ├└╼─┐'
 # hc set window_border_normal_color    unkown
 # hc set window_border_urgent_color    unkown
 # hc set window_border_width           unkown
-hc set window_gap                    5
+hc set window_gap                    0
 hc set wmname                        herbstluftwm
 
 
@@ -210,12 +210,13 @@ hc attr theme.fullscreen.reset 1
 # hc attr theme.title_font        fixed
 
 # hc attr theme.title_height      0
-# hc attr theme.outer_color       black
-# hc attr theme.outer_width       0
-hc attr theme.color             $black
-hc attr theme.border_width      0
+# hc attr theme.outer_color       $grey
+# hc attr theme.outer_width       4
+hc attr theme.color             $darkgrey
+    hc attr theme.active.color      $blue
+hc attr theme.border_width      4
 # hc attr theme.inner_color       black
-# hc attr theme.inner_width       0
+# hc attr theme.inner_width       4
 # hc attr theme.padding_bottom    0
 # hc attr theme.padding_left      0
 # hc attr theme.padding_right     0

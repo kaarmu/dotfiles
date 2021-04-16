@@ -45,6 +45,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'sotte/presenting.vim'
 " Plug 'daeyun/vim-matlab', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
+Plug 'lervag/vimtex'
 
 " *-- LSP
 Plug 'neovim/nvim-lspconfig'
@@ -52,6 +53,13 @@ Plug 'nvim-lua/completion-nvim'
 " Plug 'tjdevries/nlua.nvim'
 
 call plug#end()
+
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+let g:conceallevel=1
+let g:tex_conceal='abdmg'
+
 
 " Auto groups                                                               {{{1
 
