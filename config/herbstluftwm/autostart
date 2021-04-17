@@ -33,6 +33,7 @@ hc keybind $Mod-Shift-Return spawn $Term
 # hc keybind $Mod-Return spawn dmenu_run -fn "Fira Code:size=14" -p "dmenu:"
 hc keybind $Mod-p spawn rofi -modi drun -show combi
 hc keybind $Mod-b spawn firefox
+hc keybind $Mod-c spawn caprine
 
 #                     ⎧ h (or ←) ⎫                          ⎧ left
 #       ⎧         ⎫   ⎪ j (or ↓) ⎪  means  ⎧ focus frame  ⎫ ⎪ down
