@@ -9,7 +9,6 @@ set pages-per-row 1
 
 #stop at page boundries
 set scroll-page-aware "true"
-set smooth-scroll "true"
 set scroll-full-overlap 0.01
 set scroll-step 100
 
@@ -34,7 +33,7 @@ set default-fg "#be868c" #01
 
 set statusbar-fg "#759abd" #04
 set statusbar-bg "#cbd2d9" #01
-set statutsbar-h-padding 100
+set statusbar-h-padding 25
 set statusbar-v-padding 15
 
 set inputbar-bg "#2c2d30" #00 currently not used

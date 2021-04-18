@@ -26,7 +26,7 @@ nnoremap <silent> <leader>Tc :execute "set colorcolumn="
                   \ . (&colorcolumn == "" ? "80" : "")<CR>
 nnoremap <silent> <leader>Tl :set cursorline!<CR>
 nnoremap <silent> <leader>Ts :execute "set laststatus="
-                  \ . (&laststatus == "0" ? "1" : "0")<CR>
+                  \ . (&laststatus == "0" ? "2" : "0")<CR>
 
         " search abort
 nnoremap <silent> <leader>sa :nohlsearch<CR>
