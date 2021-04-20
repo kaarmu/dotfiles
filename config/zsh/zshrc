@@ -42,8 +42,12 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 bindkey -e
 
 # Move forw/backw with ctrl-LArrow, ctrl-RArrow
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
+# https://stackoverflow.com/a/8645267
+bindkey "^[[1;5C"   forward-word
+bindkey "^[[1;5D"   backward-word
+bindkey "^[[H"      beginning-of-line
+bindkey "^[[F"      end-of-line
+bindkey "^[[3~"     delete-char
 
 # === Aliases and minor tweaks ===
 

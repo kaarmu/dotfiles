@@ -98,6 +98,11 @@ nnoremap <silent> <leader>O O<Esc>j
 nnoremap <silent> <leader><Space> a<Space><Esc>h
 nnoremap <silent> <leader><BS> i<Space><Esc>l
 
+vnoremap <silent> <C-S-c> y
+nnoremap <silent> <C-S-v> p
+inoremap <silent> <C-S-v> <C-o>p
+
+
 " Windows (splits)                                              {{{1
         " (create) window right/left/down/up
 nnoremap <silent> <leader>wr <cmd>bel vnew<CR>
