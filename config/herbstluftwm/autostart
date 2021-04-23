@@ -100,7 +100,7 @@ hc keybind $Mod-Ctrl-m foreach CLIENT clients. \
 # The following cycles through the available layouts within a frame, but skips
 # layouts, if the layout change wouldn't affect the actual window positions.
 # I.e. if there are two windows within a frame, the grid layout is skipped.
-hc keybind $Mod-Shift-l                                         \
+hc keybind $Mod-y                                               \
             or , and . compare tags.focus.curframe_wcount = 2   \
                      . cycle_layout +1 vertical horizontal max  \
                , cycle_layout +1 vertical horizontal grid max
