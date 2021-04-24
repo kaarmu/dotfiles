@@ -1433,3 +1433,90 @@ mv global.json ../
 dotnet tool restore
 poweroff
 nv 
+ls
+fsharp
+ls
+FsAutoComplete
+ls
+mv ../global.json .
+nv global.json
+dotnet -bv
+dotnet -v
+dotnet --version
+dotnet --list-sdks
+nv global.json
+dotnet tool restore
+(\
+SDK_VERSION="5.0.100";\
+DOTNET_VERSION="5.0.100";\
+DOTNET_UNINSTALL_PATH="/usr/share/dotnet";\
+sudo rm -rf $DOTNET_UNINSTALL_PATH/sdk/$SDK_VERSION;\
+sudo rm -rf $DOTNET_UNINSTALL_PATH/shared/Microsoft.NETCore.App/$DOTNET_VERSION;\
+sudo rm -rf $DOTNET_UNINSTALL_PATH/shared/Microsoft.AspNetCore.All/$DOTNET_VERSION;\
+sudo rm -rf $DOTNET_UNINSTALL_PATH/shared/Microsoft.AspNetCore.App/$DOTNET_VERSION;\
+sudo rm -rf $DOTNET_UNINSTALL_PATH/host/fxr/$DOTNET_VERSION;\
+)
+dotnet --list-sdks
+dotnet fake build --target
+ls
+cd
+ls
+fsharp
+;ls
+cd bin
+ls
+../
+ls
+cd FsAutoComplete
+ls
+cd src
+ls
+ls FsAutoComplete
+gs
+../
+bat .gitignore
+ls src
+dotnet fake
+dotnet fake build
+find . -iname fsautocomplete.dll 
+ls ~/.local/lib
+ls ~/.local/lib/python3.9
+ls ~/.local
+mkdir ~/.local/bin
+ls src/FsAutoComplete/bin/Release/net5.0
+df src/FsAutoComplete/bin/Release/net5.0
+df -h src/FsAutoComplete/bin/Release/net5.0
+df -h
+df --help
+ls --help
+ls -s src/FsAutoComplete/bin/Release/net5.0
+ls -sh src/FsAutoComplete/bin/Release/net5.0
+mv src/FsAutoComplete/bin/Release/net5.0 ~/.local/share/nvim/fsac
+../
+rm FsAutoComplete
+rm FsAutoComplete -R
+rm FsAutoComplete -rf
+ls
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+nv ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+nv Program.fs
+nv Program.fs
+nv ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+nv Program.fs
+nv ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+nv ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+nv ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+cd ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/fsharpvim.py
+cd ~/.local/share/nvim/plugged/vim-fsharp/ftplugin/
+ls
+nv fsi.py
+nv fsi.py
+..
+nv .
+nv .
+gs
+gr -W autoload/
+nv

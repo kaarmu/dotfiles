@@ -21,9 +21,8 @@ nitrogen --restore &
 hc keyunbind --all
 
 # keybindings
-AltKey=Mod1
-SuperKey=Mod4
-Mod=$SuperKey # Herbst Mod Key
+# if you have a super key you will be much happier with Mod set to Mod4
+Mod=Mod4
 Term=kitty
 
 # Applications
@@ -36,8 +35,8 @@ hc keybind $Mod-p spawn rofi -modi drun -show combi
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-c spawn caprine
 
-#       ⎧         ⎫   ⎧ h (or ←) ⎫         ⎧ focus frame  ⎫ ⎧ left
-#       ⎪ Alt     ⎪   ⎪ j (or ↓) ⎪  means  ⎪ split frame  ⎪ ⎪ down
+#                     ⎧ h (or ←) ⎫                          ⎧ left
+#       ⎧         ⎫   ⎪ j (or ↓) ⎪  means  ⎧ focus frame  ⎫ ⎪ down
 # Mod + ⎨ Shift   ⎬ + ⎨ k (or ↑) ⎬  ═════> ⎨ move window  ⎬ ⎨ up
 #       ⎩ Control ⎭   ⎩ l (or →) ⎭         ⎩ resize frame ⎭ ⎩ right
 
@@ -63,17 +62,17 @@ hc keybind $Mod-Shift-k     shift up
 hc keybind $Mod-Shift-l     shift right
 
 # splitting frames
-hc keybind $Mod-$AltKey-Left   split   left    0.5
-hc keybind $Mod-$AltKey-Down   split   bottom  0.5
-hc keybind $Mod-$AltKey-Up     split   top     0.5
-hc keybind $Mod-$AltKey-Right  split   right   0.5
-hc keybind $Mod-$AltKey-h      split   left    0.5
-hc keybind $Mod-$AltKey-j      split   bottom  0.5
-hc keybind $Mod-$AltKey-k      split   top     0.5
-hc keybind $Mod-$AltKey-l      split   right   0.5
+hc keybind $Mod-Mod1-Left   split   left    0.5
+hc keybind $Mod-Mod1-Down   split   bottom  0.5
+hc keybind $Mod-Mod1-Up     split   top     0.5
+hc keybind $Mod-Mod1-Right  split   right   0.5
+hc keybind $Mod-Mod1-h      split   left    0.5
+hc keybind $Mod-Mod1-j      split   bottom  0.5
+hc keybind $Mod-Mod1-k      split   top     0.5
+hc keybind $Mod-Mod1-l      split   right   0.5
 
 # let the current frame explode into subframes
-hc keybind $Mod-$AltKey-space split explode
+hc keybind $Mod-space split explode
 
 # resizing frames and floating clients
 resizestep=0.02
@@ -100,9 +99,9 @@ hc keybind $Mod-Ctrl-m foreach CLIENT clients. \
 # The following cycles through the available layouts within a frame, but skips
 # layouts, if the layout change wouldn't affect the actual window positions.
 # I.e. if there are two windows within a frame, the grid layout is skipped.
-hc keybind $Mod-y                                               \
-            or , and . compare tags.focus.curframe_wcount = 2   \
-                     . cycle_layout +1 vertical horizontal max  \
+hc keybind $Mod-Shift-space                                                     \
+            or , and . compare tags.focus.curframe_wcount = 2                   \
+                     . cycle_layout +1 vertical horizontal max             \
                , cycle_layout +1 vertical horizontal grid max
 
 # mouse

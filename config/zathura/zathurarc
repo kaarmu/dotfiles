@@ -72,7 +72,3 @@ set scroll-step 50
 unmap f
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
-
-set selection-clipboard clipboard
-
-
