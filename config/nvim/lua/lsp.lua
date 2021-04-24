@@ -67,4 +67,8 @@ require'lspconfig'.sumneko_lua.setup {
   },
 }
 
+-- fsharp : Plug 'fsharp/vim-fsharp'
+require'lspconfig'.fsautocomplete.setup{
+  cmd = {'dotnet', '/home/kaarmu/.local/share/nvim/fsac/fsautocomplete.dll', '--background-service-enabled'}
+}
 

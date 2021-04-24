@@ -1,561 +1,3 @@
-nvim ~/.config/herbstluftwm/autostart
-chmod --help
-chmod u+s /usr/bin/Xorg
-sudo chmod u+s /usr/bin/Xorg
-xinit herbstluftwm
-ls
-ls -a
-nvim ~/.config/herbstluftwm/autostart
-groups
-sudo gpasswd --add kaarmu dialout
-nvim ~/.config/herbstluftwm/autostart
-reboot
-startx --help
-ls
-ls -a
-xinit herbstluftwm
-gpasswd --help
-gpasswd -a kaarmu tty
-sudo gpasswd -a kaarmu tty
-xinit herbstluftwm
-nvim ~/.config/herbstluftwm/autostart
-chmod --help
-chmod u+s /usr/bin/Xorg
-sudo chmod u+s /usr/bin/Xorg
-xinit herbstluftwm
-ls
-ls -a
-nvim ~/.config/herbstluftwm/autostart
-groups
-sudo gpasswd --add kaarmu dialout
-nvim ~/.config/herbstluftwm/autostart
-reboot
-xinit herbstluftwm
-chmod u+s /usr/bin/Xorg
-sudo chmod u+s /usr/bin/Xorg
-xinit herbstluftwm
-startx
-sudo pacman -S xterm
-startx
-shutdown now
-journalctl less -F
-journalctl | less -F
-ls /var/log
-xinit herbstluftwm
-less .local/share/xorg/Xorg.0.log
-lspci -v | grep -A1 -e VGA -e 3D
-sudo pacman -S xf86-video-intel
-xinit herbstluftwm
-shutdown now
-uname -h
-uname --help
-uname -s
-uname -r
-reboot
-xrandr -h
-xrandr --help
-xrandr
-xrandr --help
-xrandr --prop
-firefox
-xrandr --dpi 144
-lspci -v | grep -A1 -e VGA -e 3D 
-sudo pacman -S nvidia
-xrandr --help
-xrandr --verbose
-xrandr -dpi 192
-xrandr --dpi 192
-nmcli d wlan0 scan
-nmcli d wifi list
-firefox &
-nmcli d wifi connect eduroam
-nmcli d h
-nmcli d wifi connect "Starbucks WiFi"
-xrandr
-xrandr --output eDP1 --scale 1.25x1.25
-exit
-firefox &
-xrandr --output eDP1 --scale 1x1
-,s
-ls
-ls -a
-pacman -S xorg-xrdb
-udo acman -S xorg-xrdb
-sudo acman -S xorg-xrdb
-sudo pacman -S xorg-xrdb
-ls
-ls -a
-xrdb -query -all
-xrandr --dpi 160
-nvim .Xresources
-xrdb -load ~/.Xresources
-exit
-exit
-firefox &
-firefox &
-cd .config
-cd herbstluftwm
-pacman -Qq dzen
-pacman -Qq dzen*
-paru -S polybar
-paru -S alsa-utils
-alsamixer
-systemctl --type=service
-herbstclient layout
-ping google.com
-herbstluftclient
-herbstluftclient help
-herbstluftclient -h
-herbstclient 
-herbstclient help
-herbstclient list_monitors 
-herbstclient layout
-herbstclient layout
-herbstclient list_commands 
-ping google.com
-bspc
-xd
-nvim .config/herbstluftwm/autostart
-exit
-nvim
-exit
-firefox &
-cd .config/herbstluftwm
-nvim autostart
-cat autostart
-nvim panel.sh
-cat panel.sh
-pgrep -u $UID -x polybar
-polybar &
-ls ..
-polybar example
-mkdir ~/.config/polybar
-cp /usr/share/doc/polybar/config ../polybar/
-cd ../polybar
-nvim config
-polybar 
-nvim ../herbstluftwm/autostart
-ls -h
-ls --help
-ls -l
-cd ../herbstluftwm
-ls -l
-chmod +x panel.sh
-polybar panel.sh
-panel.sh
-./panel.sh
-ping google.com
-cd .config/polybar
-nvim config
-polybar example
-nvim config
-polybar example
-nvim config
-polybar main-herbst
-polybar herbst
-nvim config
-polybar mainbar-herbst
-nvim config
-nvim ../herbstluftwm/panel.sh
-nvim config
-firefox &
-cd .config
-ls
-pacman -S neofetch
-sudo pacman -S neofetch
-neofetch
-cat /usr/share/doc/kitty/kitty.conf
-cp /usr/share/doc/kitty/kitty.conf ~/.config/kitty
-nvim ~/.config/kitty/kitty.conf
-herbstclient layout
-nvim .config/polybar/config
-ch -d '/' -f1 "zsh/plug"
-cut -d '/' -f1 "zsh/plug"
-cut -d '/' -f1 <<< "zsh/plug"
-cut -d '/' -f1 <<< "user/zsh/plug"
-cut -d '/' -f2 <<< "user/zsh/plug"
-cut -d '/' -f3 <<< "user/zsh/plug"
-echo 'git clone'
-echo git clone
-git clone help
-git clone -h
-ping archlinux.org
-exit
-firefox &
-cd /local/share/zs
-cd .config
-ls
-cd zsh
-cd
-nvim .zshrc
-ls
-nvim .zshrc
-nvim .zshrc
-nvim .zshrc
-ls
-cd plugins
-ls
-cd zsh-you-should-use
-ls
-ls
-cd .local/share/
-ls
-cd zsh
-ls
-cd plugins
-ls
-cd zsh-
-cd zsh-syntax-highlighting
-ls
-ls
-ls
-cd ../
-ls
-cd zsh-you-should-use
-ls
-cd ../
-ls
-cd ../
-ls
-nvim ~/.zshrc
-ls
-cd .local
-ls
-cd share
-echo $XDG_DATA_HOME
-cd zsh
-ls
-cd plugins
-ls
-rmdir ./*
-ls
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-source ~/.zshrc
-ls
-cd .local/share
-ls
-cd zsh
-ls
-cd plugins
-ls
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-source ~/.zshrc
-ls
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-nvim ~/.zshrc
-source ~/.zshrc
-nvim ~/.zshrc
-nvim .zshrc
-\:q
-exit
-ping archlinux.org
-clear
-firefox &
-nvim ~/.config/kitty/kitty.conf
-dmenu
-dmenu -h
-dmenu_run
-dmenu_run
-dmenu_run -h
-cd downloads
-ls
-cat eduroam-linux-KRIoT-KTH.SE_eduroam.py
-python eduroam-linux-KRIoT-KTH.SE_eduroam.py
-nv ../todo.md
-nv eduroam-linux-KRIoT-KTH.SE_eduroam.py
-paru -S python-pip
-pip
-py eduroam-linux-KRIoT-KTH.SE_eduroam.py
-ls
-nmcli d wifi eduroam
-nmcli d wifi connect eduroam
-paru -Ss network-manager
-paru -Ss nm
-pacman -Ss nm
-pacman -Ss nm-
-sudo pacman -S nm-connection-editor
-nm
-NetworkManager
-sudo NetworkManager
-py eduroam-linux-KRIoT-KTH.SE_eduroam.py
-paru -S insync
-python -m pip list
-firefox &
-paru -S thunar
-paru -S dmenu
-nvim todo.md
-cd .config
-ls
-cd herbstluftwm
-nv autostart
-nv ../kitty/kitty.conf
-nv autostart
-cd
-ls
-ls -a
-rm -r .cat_installer
-exit
-dmesg --help
-dmesg | grep "ACPI Error:"
-sudo dmesg | grep "ACPI Error:"
-lspci -v | grep -A1 -e VGA -e 3D
-sudo pacman -S xf86-video-intel
-xinit herbstluftwm
-pacman -Qq linux-surface
-ls /boot
-ls /boot/EFI
-nano /usr/share/X11/xorg.conf.d
-nano /usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
-nvidia
-ls
-cd .local
-ls
-ls a-
-ls -a
-cd share
-ls
-cd xorg
-ls
-less Xorg.0.log
-stat /usr/bin/Xorg
-stat /usr/bin/X
-cp /etc/X11/xinit/xinitrc ~/.xinitrc
-cd ~/
-nano .xinitrc
-nv ~/.config/herbstluftwm/autostart
-startx
-ping google.com
-startx
-startx
-startx
-cd .config
-ls
-mkdir nitrogen
-mkdir ~/.config/nitrogen/wallpapers
-cp ~/onedrive/Desktop/hydrogen_remix* ~/.config/nitrogen/wallpapers
-\:q
-paru -S insync
-insync start
-insync
-htop
-pacman -S htop
-sudo pacman -S htop
-htop
-cd onedrive/Desktop
-ls
-nitrogen
-nitrogen &
-nitrogen &
-paru -S libinput
-nv ~/.config/herbstluftwm
-cat ~/.config/herbstluftwm/autostart
-herbstclient layout
-herbstclient layout
-herbstclient layout
-nv ~/.config/herbstluftwm/autostart
-nv ~/.config/herbstluftwm/autostart
-paru -Ss fira-code
-paru -Ss nerd-fonts-fira-code
-paru -S nerd-fonts-fira-code
-ls
-startx
-startx
-ls
-paru -S unzip
-ls
-dcd
-cd downloads
-ls
-mv course_files_export.zip ~/onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems/1.\ Examinering
-ls
-cd ~/onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems
-cd 1.\ Examinering
-ls
-mv course_files_export.zip TEN
-cd TEN
-ls
-unzip course_files_export.zip
-ls
-cd ../
-mv TEN/* ./
-cd Exams
-ls
-cd .config
-ls
-cd polybar
-ls
-nv config
-cd
-ls
-cat todo.md
-echo "7. thunar" >> todo.md
-cd repos
-ls
-cd dotfiles
-ls
-make load-repo
-echo herbstluftwm >> include
-ls ~/.config
-ls .config
-ls .config/autostart
-cd repos
-cd dotfiles
-echo kitty >> include
-echo nitrogen >> include
-echo polybar >> include
-make load-repo
-ls
-ls config
-gs
-echo local/nvim/undo >> .gitignore 
-gs
-cd repos/dotfiles
-ls
-cd local
-ls
-cd zsh
-cd plugins
-\ls
-rm * 
-rm * -f
-ls
-rm -rf docs
-sudo rm -rf docs
-sudo rm -rf highlighters
-ls
-sudo rm -rf images
-sudo rm -rf tests
-ls
-cd../
-cd ../
-cd ~/repos/dotfiles
-ls
-gs
-cd local/zsh/plugins
-rm -rf .g*
-sudo rm -rf .g*
-ls -a
-sudo rm -rf .editorconfig
-sudo rm -rf .revision-hash
-sudo rm -rf .version
-ls -a
-cd ~/repos/dotfiles
-ls
-gs
-cat .git
-cat .gitignore
-rm .gitignore
-echo "local/nvim/undo/" >> .gitignore
-echo "local/nvim/plugged/" >> .gitignore
-echo "local/nvim/.netrwhist" >> .gitignore
-echo "local/nvim/.shada/" >> .gitignore
-echo "local/nvim/shada/" >> .gitignore
-echo "local/zsh/history" >> .gitignore
-echo "local/zsh/plugins/" >> .gitignore
-nv .gitignore
-ls
-cd repos/dotfiles
-gs
-make load-repo
-gs
-ga .
-gc "Arch surface"
-git config --global user.email "kajarfvidsson@gmail.com"
-git config --global user.name "Kaj Munhoz Arfvidsson"
-gc "Arch surface"
-gP
-cd ../
-ls
-cd ../
-startx
-startx
-herbstclient
-herbstclient layout 
-herbstclient layout 
-
-herbstclient layout 
-startx
-nm
-nm-connection-editor
-nmcli d wifi scan
-nmcli d wifi list
-nmcli d wifi connect Mälartåg-wifi
-paru -Ss zathura
-paru -S zathura
-nv .zshrc
-exit
-this is some text 
-nv .zshrc
-ls
-clear
-zathura
-cd /usr/li
-cd /usr/lib
-ls
-ls za*
-sudo mkdir zathura
-ls za*
-ls zathura
-ls
-\:q
-clear
-zathura
-cd ~
-ls
-nv 
-nv 
-cd hybrid/1.\ Examinering/Exams
-ls
-cd June\ 2019
-ls
-ln -s onedrive/School/KTH/Year\ 4/EL2450\ -\ Hybrid\ and\ Embedded\ Control\ Systems ~/hybrid
-ls
-cd hybrid
-ls
-cd 1`
-cd 1.\ Examinering
-ls
-cd TEN
-../Exams
-ls
-March\ 201
-March\ 2019
-ls
-ls
-ls
-cd ../
-mv ./*/* .
-ls
-ls June\ 201
-ls June\ 2019
-ls June\ 2017
-ls March\ 2019
-ls March\ 2017
-ls March\ 2018
-ls solutions
-ls
-rmdir Ju*
-rmdir Ma*
 ls
 ls
 ls solutions
@@ -1122,3 +564,872 @@ ls ..
 ls ../kitty
 ls ../nvim
 ls ../zathura
+repos/dotfiles
+ls
+gp
+make install
+paru -Syu
+paru -Syu
+startx
+xbacklight
+xbacklight 50
+xbacklight = 50
+startx
+xbacklight -s 20
+xbacklight = 20
+xbacklight = 10
+xbacklight = 5
+reboot
+xbacklight = 60
+man zathura
+paru -Ss neovide
+cd /tmp
+git clone git@github.com:Kethku/neovide
+git clone https://github.com/Kethku/neovide
+ls /sys/class/power_supply/BAT1
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/BAT2/capacity
+py -c "x=47+79;x/200"
+py -c "x=47+79;print(x/200)"
+cd neovide
+ls
+git branch -l
+git branch
+git switch opengl
+cd ..
+ls
+rm neovide
+rm neovide -
+rm neovide -r
+sudo rm neovide -rf
+paru -Qq tex
+paru -S texlive
+paru -S tex
+paru -Ss tex
+paru -Ss texlive
+paru -S texlive-most
+paru -Ss texlive-core
+paru -S texlive-core
+texlive
+tex
+latex
+nvim
+nv
+nv
+nv
+n
+insync start
+insync show
+paru -Ss libzathura
+paru -S libzathura
+paru -Ss zathura
+paru -S libzathura
+cd /tmp
+git clone git@gitlab.com:pwmt/libzathura
+git clone git@git.pwmt.org:pwmt/libzathura
+git clone git@pwmt.org:pwmt/libzathura
+paru -SYU
+paru -Syu
+paru -S libzathura 
+ls
+git clone https://github.com/Kethku/neovide/tree/opengl
+git clone https://github.com/Kethku/neovide
+cd neovide
+git branch -l
+gf
+git branch -l
+git checkout -h
+git fetch origin/opengl
+git fetch origin
+gb
+git branch -l
+git branch -h
+git remote
+git checkout -t origin/opengl
+gf
+gs
+gl
+ls
+makepkg -si
+cargo build --release 
+./target/release/neovide
+RUST_BACKTRACE=1 ./target/release/neovide
+git switch main
+gf
+gp
+git
+gl
+git
+git reset 
+git reset -h
+git tag
+git tag -h
+git reset -h
+git tag -h
+git tag 
+git tag 0.7.0
+git tag -h
+git reset 0.7.0
+ls
+gl
+cargo build --release
+./target/release/neovide
+git reset 0.60
+git reset 0.6,0
+git reset 0.6.0
+ls ./target/release
+gs
+git restore -SW .
+gl
+cargo build --release
+gp
+gl
+ls
+gp
+gr -SW .
+ls
+gs
+rm -rf assets
+rm -rf neovide-derive
+rm -rf src
+gr -SW .
+ls
+git reset 0.6.0
+gp
+gl
+git reset 0.6.0
+gs
+rm * -rs
+rm * -rf
+ls
+gs
+gr -SW .
+gl
+cargo build --release
+git reset 0.5.0
+gs
+rm * -rf
+gr -SW .
+gs
+rm .vscode -rf
+rm .github -rf
+gr -SW .
+cargo build --release
+cd ..
+rm -rf neovide
+latexmk
+.local/share
+ls
+cd nvim
+ls
+cd plugged
+ls
+cd snow
+ls
+cd colors
+ls
+bat snow.vim
+cat snow.vim
+nv snow.vim
+cat snow.vim >> ~/.config/herbstluftwm/snow.sh
+neofetch
+hc=herbstluftclient 
+alias hc=herbstclient
+. .config/herbstluftwm/snow.sh
+hc attr theme.active.background_color black
+hc attr theme.active.border_width 10
+hc attr theme.active.color black
+hc attr theme.active.outer_width 10
+hc attr theme.outer_width 10
+hc
+hc attr
+hc attr theme.active.border_width 10
+hc attr theme.title_height 10
+herbstclient attr theme.active.border_width 10
+hc attr theme.title_height 30
+hc attr theme.title.color yellow
+hc attr theme.active.color yellow
+hc attr theme.active.color $yellow
+hc attr theme.active.color $black
+hc attr theme.active.color $grey
+hc attr theme.active.color $darkred
+hc attr theme.active.color $red
+hc attr theme.active.color $green
+hc attr theme.active.color $yellow
+hc attr theme.active.color $blue
+hc attr theme.active.color $purple
+hc attr theme.active.color $cyan
+hc attr theme.active.color $lightgrey
+hc attr theme.active.color $white
+nv .config/herbstluftwm
+nv .config/herbstluftwm/snow.sh
+xbacklight = 60
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/BAT2/capacity
+cat /sys/class/power_supply/BAT2/capacity
+cat /sys/class/power_supply/BAT1/capacity
+nv
+nv .config/zathura/zathurarc
+nv
+man zathura
+man zathurarc
+xbacklight = 50
+xbacklight = 40
+man zathura
+man girara
+man zathurarc
+n
+ln -s onedrive/School/KTH/Year\ 4/EL2520\ -\ Control\ Theory\ and\ Practice,\ Advanced\ Course/ regler
+ln -s onedrive/School/KTH/Year\ 4/AK2036\ -\ Theory\ and\ Methodology\ of\ Science tamos
+ls
+cd regler
+ls
+cd 2
+cd 2_Slides
+ls
+cd ../..
+tamos/
+ls
+cd 3_Material
+ls
+n
+paru -S tlmgr
+echo $TEXMFLOCAL
+paru -S tllocalmgr
+paru -S tllocal
+paru -S tllocalmgr
+paru -Ss tllocalmgr
+paru -S tllocalmgr-git
+xwd
+xwd
+xwd -out 
+xwd -out test.png
+n
+paru -S main
+paru -S maim
+main
+mainm
+maim
+maim -out test.png
+maim -h
+maim test.png
+maim -s
+maim -s test.png
+paru -S caprine
+tamos/3_Material/Block_2
+ls
+nv main.tex
+nv main.tex
+ls
+cd sys
+ls
+cd ../
+nv main.tex
+echo $TEXMFDIST
+TEXMFDIST
+cd /var/lib/texmf
+ls
+ls arch
+cd arch
+ls
+cd installedpkgs
+ls
+paru -Qq texlive
+paru -Qq te
+paru -Qq tex*
+tllocalmgr -h
+tllocalmgr install graphicx
+tllocalmgr
+latex
+tllocalmgr
+tllocalmgr
+tllocalmgr
+tllocalmgr
+nv 
+herbstclient attr theme.color
+herbstclient attr theme.background_color 
+herbstclient attr theme.normal.color
+herbstclient attr theme.minimal.color 
+herbstclient attr theme.tiling.color
+v
+nv
+n
+repos/dotfiles
+gp
+nv ~/.config/picom/picom.conf
+nv .config/picom/picom.conf
+cd repos/dotfiles
+make load-configs
+gs
+gd config/nvim/init.vim
+gd config/nvim/plugin/appearance.vim
+gs
+ga .
+gc -m "snoooowww"
+gP
+pm
+pm
+paru -S pulsemixer
+pm
+alsamixer
+alsamixer
+tamos/3_Material/Block_2
+ls
+nv .
+nv .
+nv main.tex
+ls
+cp main.tex _main.tex
+ls main*
+rm main* ^main.tex
+ls
+mv _main.tex main.tex
+nv main.tex
+nv main.tex
+rm -r Include
+ls
+nv main.tex
+nv main.tex
+nv main.
+nv main.tex
+nv main.tex
+insync start
+insync show
+startx
+repos/dotfiles
+ls
+make load-configs
+gs
+ga .
+gc -m "nicer herbst"
+gP
+gP
+ls /sys/class/power_supply
+ls /sys/class/power_supply/
+for bat in $(ls /sys/class/power_supply/BAT*); do echo $bat; done
+ls /sys/class/power_supply/BAT*
+ls /sys/class/power_supply/BAT*/capacity
+for bat in $(/sys/class/power_supply/BAT*/capacity); do cat $bat; done;
+cat /sys/class/power_supply/BAT*/capacity
+bat
+paru -S bat
+~bcat /sys/class/power_supply/BAT*/capacity
+bat /sys/class/power_supply/BAT*/capacity
+netinfo
+cd .config/zsh
+ls
+ls plugins
+nv plugins/funcs
+ls
+ls plugins
+bat aliases
+git branch
+ls
+rm aliases func
+rm aliases funcs
+ls
+cd ~/repos/dotfiles
+pg
+gp
+make load-configs
+ls
+ga .
+gc -m "added battery func and caprine hotkey"
+cP
+gP
+battery
+battery
+paru -S xclip
+xclip -h
+cat /etc/X11/xinit | xclip
+cat /etc/X11/xinit/xinitrc | xclip
+cat /etc/X11/xinit/xinitrc >> xclip
+rm xclip
+cat /etc/X11/xinit/xinitrc | xclip
+cat /etc/X11/xinit/xinitrc
+cat /etc/X11/xinit/xinitrc | xclip
+nv
+xclip -h
+cat /etc/X11/xinit/xinitrc | xclip -target "*"
+nv
+cat /etc/X11/xinit/xinitrc | xclip -target "+"
+nv
+nv /etc/X11/xinit/xinitrc
+nv /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nv /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+setxkbmap -h
+setxkbmap --help
+setxkbmap us,se -option "gpr:win_shift_toggle"
+setxkbmap us,se -option "grp:win_shift_toggle"
+setxkbmap -layout us,se -option "grp:win_shift_toggle"
+setxkbmap -layout us,se -option "grp:alt_shift_toggle"
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+paru -S adobe-source-han-sans-jp-fonts
+n
+startx
+systemctl --user insync@kaarmu.service
+systemctl --user enable insync@kaarmu.service
+systemctl enable insync@kaarmu.service
+systemctl help
+systemctl --help
+systemctl list-units
+insync show
+systemctl enable insync@kaarmu.service
+systemctl start insync@kaarmu.service
+systemctl list-unit
+systemctl list-units
+insync show
+startx
+startx
+systemctl list-units
+paru -Qq texlive-local
+paru -Qq texlive-local*
+paru -Q texlive-local
+paru -Q texlive
+paru -Qq texlive
+paru -Qq texlive*
+paru -Qq "texlive-*"
+paru -Qq "texlive"
+paru - "texlive"
+paru -Q "texlive"
+pacman -Q
+pacman -Qq
+pacman -Qq tex
+pacman -Q | grep tx
+pacman -Q | grep tex
+tamos/3_Material/Block_1
+ls
+xdg-open Block1-TaskA-Kaj-MunhozArfvidsson.pdf
+man zathurarc
+nv ~/.config/zathura/zathurarc
+man zathurarc
+nv ~/.config/zathura/zathurarc
+xdg-open Block1-TaskA-Kaj-MunhozArfvidsson.pdf
+nv ~/.config/zathura/zathurarc
+xdg-open Block1-TaskA-Kaj-MunhozArfvidsson.pdf
+nv ~/.config/zathura/zathurarc
+xdg-open Block1-TaskA-Kaj-MunhozArfvidsson.pdf
+nv ~/.config/zathura/zathurarc
+xdg-open Block1-TaskA-Kaj-MunhozArfvidsson.pdf
+xdg-open Block1-TaskA-Kaj-MunhozArfvidsson.pdf
+xbacklight = 70
+xbacklight = 90
+battery
+n
+battery
+nv .config/kitty/kitty.conf
+nv
+nv
+nv .config/kitty/kitty.conf
+battery
+battery
+n
+startx
+shutdown now
+n
+n
+nv
+systemctl list-units
+insync show
+insync start
+insync show
+startx
+repos/kaarmu
+repos/dotfiles
+make load-configs
+gs
+ga 
+ga .
+ls
+gs
+gc -m "sunday"
+gP
+shutdown now
+paru -Qq texlive
+paru -Q -h
+paru -Q | grep texlive-
+shutdown now
+paru -Q 
+paru -Q network
+paru -Q | grep network
+networkmanager
+networkctl
+battery
+ping google.com
+networkctl --help
+networkctl list
+networkctl status
+ip link
+networkctl up wlp0s20f3
+systemctl start networkd.service
+ip link set wlp0s20f3 up
+sudo ip link set wlp0s20f3 up
+ip link
+nmcli
+nmcli help
+nmcli c
+nmcli n
+nmcli g help
+nmcli d
+nmcli d help
+nmcli d wifi list
+nmcli d
+nmcli d help
+nmcli d wifi connect "Kaj's iPhone" password kajsinternet
+nmcli d wifi connect "Kaj �s iPhone" password kajsinternet
+ping archlinux.org
+paru -Syu
+paru -Syu
+paru -S dotnet
+paru -S dotnet-sdk
+cd /tmp
+ls
+mkdir fs
+./fs
+ls
+cd ../
+mv fs fsharp
+dotnet new console -lang F
+dotnet new console -lang F#
+/tmp
+ls
+rm -rf *
+sudo rm -rf *
+ls
+mkdir fs
+mv fs fsharp
+./fsharp
+dotnet new console -lang F#
+/tmp/fsharp
+ls
+battery
+fsharp
+ls
+nv Program.fs
+nmcli d wifi list
+nmcli d wifi connect Mälartåg-wifi
+nv fsharp/Program.fs
+dotnet fsi
+dotnet fsi help
+dotnet fsi -help
+dotnet fsi -h
+dotnet fsi --help
+dotnet fsi --help | rg server
+dotnet fsi --help | rg logo
+dotnet fsi --help | rg ver
+dotnet fsi version
+dotnet fsi --version
+py
+/usr/bin/ls
+py
+py
+py
+ls
+./test.png
+la
+ll
+ls -l
+mkdir fsharp
+cd fsharp
+dotnet new console -lang F#
+dotnet restore
+ls
+cd ..
+fsharp
+ls obj
+paru -Syu
+ls
+nv
+nv
+ls ~/.local/share/nvim/plugged
+ls ~/.local/share/nvim/plugged/vim-fsharp
+ls ~/.local/share/nvim/plugged/vim-fsharp/ftplugin
+nv Program.fs
+ls ~/.local/share/nvim/plugged/vim-fsharp/ftplugin
+cd ~/.local/share/nvim/plugged/vim-fsharp/ftplugin
+ls
+nv fsharpvim.py
+rp "print *" .
+paru -S ripgrep
+rp -r "print *" .
+rg -r "print *" .
+rg -r "print\s" .
+rg -r "print" .
+rg "print" .
+rg "print " .
+rg "print *" .
+ls
+../
+ls
+bat install.
+bat install.sh
+ls
+ls ftplugin
+nv ~/fsharp
+cd ftplugin
+ls
+nv fsharp.vim
+pip install neovim
+nv ~/fsharp/Program.fs
+paru -S mono
+nv ~/fsharp/Program.fs
+cd ..
+make
+nv
+nv ~/fsharp/Program.fs
+nv ~/fsharp/Program.fs
+paru -Ss fsharpi
+dotnet fsi
+fsharpi
+dotnet help
+dotnet build
+ls
+make
+./install.sh
+gr -SW .
+gs
+rm 1kh8apb6.ea4
+rm 1kh8apb6.ea4 -e
+rm 1kh8apb6.ea4 -r
+cd
+ls
+fsharp/
+ls
+dotnet build
+nv Program.fs
+paru -Syu dotnet
+~/.local/share/nvim/plugged/vim-fsharp
+ls
+bat install.s
+bat install.sh
+bat Makefile
+ls
+ls ~
+la ~
+grep .fs .
+rg .fs .
+find -r -iname .fs .
+find -iname .fs .
+find -iname '*.fs' .
+find -iname "*.fs" .
+find . -iname "*.fs"
+ls **/*.fs
+nv ~/fsharp/Program.fs
+nv ftplugin/fsi.py
+nv ftplugin/fsi.py
+nv
+nv ~/fsharp/Program.fs
+nv ~/fsharp/Program.fs
+nv ~/fsharp/Program.fs
+nv
+fsi
+dotnet fsi
+nv
+where is dotnet
+ls /usr/bin/
+ls /usr/bin/ | grep fsi
+ls /usr/bin/ | grep dotnet
+mono
+fsharpi
+xbacklight = 30
+xbacklight = 20
+xbacklight = 10
+alias fsharpi=dotnet fsi
+fsharpi
+alias fsharpi="dotnet fsi"
+fsharpi
+nv ~/fsharp/Program.fs
+nv /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nv /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+ls
+cd ftplugin/l
+cd ftplugin/
+ls
+nv fsi.py
+ls bin
+rm bin
+rm bin -r
+..
+make
+ls
+cd ftplugin
+ls
+nv fsi.py
+nv
+nv fsi.py
+dotnet fsi
+clock
+battery
+gigabyte
+xbacklight = 99
+xbacklight  = 1000
+xbacklight  = 1
+xbacklight  = 0
+xbacklight  = 20
+xbacklight  = 10-
+xbacklight  = pussy och du e ett fetto o du suger kuk xbacklight = 00
+paru -S spt
+spt
+spt
+nv fsi.py
+gr -W .
+nv fsi.py
+spt
+dotnet fsi help
+dotnet run
+xbacklight 0
+xbacklight = 0
+xbacklight =10
+xbacklight = 10
+dotnet run
+dotnet run
+dotnet run
+dotnet run
+dotnet run
+dotnet run
+dotnet run
+dotnet run 1 2 3
+dotnet run 
+dotnet run pussy bitch
+dotnet run pussy bitch
+dotnet run pussy bitch
+xbacklight = 20
+xbacklight = 5
+~/.local/share
+ls
+nvim/
+ls
+plugged/vim-ma
+plugged/vim-fsharp
+ls
+gs
+ls
+bat Makefile
+../.local/share/nvim/plugged/vim-fsharp
+ftplugin
+ls
+cd bin
+ls
+whereis .
+echo $PWD
+echo $PWD/fsautocomplete.exe | xclip -s c
+echo $PWD/fsautocomplete.exe | xclip -h
+echo $PWD/fsautocomplete.exe | xclip -selection c
+ls
+../
+ls
+../
+ls
+ftdetect
+ls
+../autoload
+ls
+../
+cd '/home/kaarmu/.local/share/nvim/plugged/vim-fsharp/ftplugin/bin/fsautocomplete.exe'
+/home/kaarmu/.local/share/nvim/plugged/vim-fsharp/ftplugin/bin/fsautocomplete.exe
+/home/kaarmu/.local/share/nvim/plugged/vim-fsharp/ftplugin/bin/
+ls
+chmod +x ./fsautocomplete.exe
+battery
+nmcli
+startx
+battery
+htop
+battery
+xbacklight 0
+xbacklight = 0
+xbacklight = 10
+xbacklight = 99
+xbacklight = 60
+cd ben dricker vodka o beer
+cd fsharp
+tree
+dotnet run ben
+nv Program.fs
+nv
+spt
+spotify
+nv
+nv Program.fs
+nmcli d wifi list
+nmcli d wifi list
+ping ARCHSURFACE
+ping archlinux.org
+nv 
+nv 
+nv Program.fs
+nv Program.fs
+nv Program.fs
+git clone git@github.com:fsharp/FsAutoComplete
+git clone https://github.com/fsharp/FsAutoComplete
+cd FsAutoComplete
+dotnet tool help
+dotnet tool --help
+dotnet tool restore
+ls
+./build.sh
+paru -R mono
+la ~
+nv ~/.config
+nv ~/.config
+dotnet tools restore
+paru -Syu
+~/.dotnet/
+ls
+paru -S dotnet-sdk
+paru -S dotnet-runtime
+ls
+dotnet --list-sdks
+cd ~/fsharp/FsAutoComplete
+dotnet help
+dotnet
+dotnet -h
+dotnet tool restore
+bat global.json
+dotnet restore
+dotnet --list-sdks
+dotnet update
+dotnet fake
+../
+dotnet build
+ls
+ls bin
+dotnet build --help
+dotnet build -o out
+ls out
+dotnet out/fsharp.dll
+out/fsharp
+out/fsharp arg1 arg2
+mv out/fsharp
+mv out/fsharp .
+./fsharp arg1 arg2
+mv out/fsharp.dll .
+./fsharp arg1 arg2
+rm fsharp fsharp.dll
+ks
+ls
+cd FsAutoComplete
+ls
+ls
+paru -Ss dotnet-sdk
+~/downloads
+ls
+chmod +x dotnet-install.sh
+ls
+./dotnet-install.sh --install-dir /usr/share/dotnet -channel Current -version "5.0.100"
+sudo ./dotnet-install.sh --install-dir /usr/share/dotnet -channel Current -version "5.0.100"
+cd ~/fsharp/FsAutoComplete
+ls
+dotnet tools restore
+dotnet tool restore
+sudo dotnet tool restore
+ls ~/.dotnet/
+ls ~/.dotnet/tool
+dotnet --list-sdks
+ls
+mv global.json ../
+dotnet tool restore
+poweroff
+nv 

@@ -46,6 +46,7 @@ Plug 'sotte/presenting.vim'
 " Plug 'daeyun/vim-matlab', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 Plug 'lervag/vimtex'
+Plug 'fsharp/vim-fsharp'
 
 " *-- LSP
 Plug 'neovim/nvim-lspconfig'
@@ -78,6 +79,7 @@ augroup END
 set completeopt=menuone,noinsert,noselect
 
 " }}}1
+
 
 " ==============================================================================
 " vim: foldmethod=marker foldlevel=0 foldtext=FoldText_vim()
