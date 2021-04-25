@@ -31,7 +31,7 @@ Plug 'mhinz/vim-signify'
 Plug 'tmhedberg/SimpylFold'
 
 Plug 'gu-fan/riv.vim'
-Plug 'zah/nim.vim'
+Plug 'alaviss/nim.nvim'
 
 " *-- Git
 Plug 'tpope/vim-fugitive'
@@ -47,6 +47,7 @@ Plug 'sotte/presenting.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 Plug 'lervag/vimtex'
 Plug 'fsharp/vim-fsharp'
+Plug 'mattn/emmet-vim'
 
 " *-- LSP
 Plug 'neovim/nvim-lspconfig'

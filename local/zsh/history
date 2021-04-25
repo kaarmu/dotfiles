@@ -1520,3 +1520,98 @@ nv .
 gs
 gr -W autoload/
 nv
+battery
+repos/dotfiles/
+make load-configs
+make load-repo
+gs
+gp
+gs
+ga . 
+gc -m "saturday"
+gs
+gP
+cd 
+fsharp
+nv Program.fs
+xbacklight = 40
+xbacklight = 20
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+nv Program.fs
+paru -S nim nimble
+../repos/dotfiles
+make load-rpeo
+make load-repo
+gs
+ga .
+gc -m "staurda"
+gP
+gP
+gs
+nimble install nimlsp
+paru -R nim nimble
+paru -Ss choosenim
+paru -S choosenim
+choosenim -help
+choosenim
+choosenim stable
+cd
+choosenim stable
+choosenim devel
+choosenim devel --latest
+nimbe.
+nimble nimlsp
+nimble install nimlsp
+ls
+nimble install inim
+inim
+inim
+inim
+sudo inim
+nim
+ls /tmp
+inim
+ls /tmp
+ls
+ls /
+nimble install
+nimble install -h
+repos/dotfiles
+make load-repo
+gs
+make install
+sudo make install
+startx
+ls /
+ls /tmo
+ls /tmp
+.local/share/nvim/plugged/nim.vim
+ls
+nv .
+nv .
+nv .
+pm
+om
+pm
+pm
+nim r main.nim
+nim r main.nim
+nim c -r main.nim
+nim r main.nim
+nim r main.nim
+nim r main.nim
+nim r main.nim
+nim r main.nim
+pm
+pm
+pm

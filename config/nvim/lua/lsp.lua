@@ -26,10 +26,10 @@ require'lspconfig'.bashls.setup({
     on_attach=require'completion'.on_attach,
 })
 
--- -- nim : nimble install nimlsp
--- require'lspconfig'.nimls.setup({
---     on_attach=require'completion'.on_attach
--- })
+-- nim : nimble install nimlsp
+require'lspconfig'.nimls.setup({
+    on_attach=require'completion'.on_attach
+})
 
 -- lua : paru -S lua-language-server
 -- probably gonna fail, https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua

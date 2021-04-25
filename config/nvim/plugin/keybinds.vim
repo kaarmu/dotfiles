@@ -53,8 +53,6 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
-inoremap <C-e> <C-o>e<C-o>l
-inoremap <C-b> <C-o>b
 
 " inoremap <C-H> <C-o>^
 " inoremap <C-J> <cmd>+15<CR>
@@ -165,7 +163,7 @@ nnoremap <silent> <leader>cl :lua vim.lsp.diagnostic.loc_list()<CR>
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <CR> pumvisible() ? (complete_info().selected == -1 ? '<C-y><CR>' : '<C-y>') : '<CR>'
+inoremap <expr> <CR> pumvisible() ? (complete_info().selected == -1 ? '<C-e><CR>' : '<C-y>') : '<CR>'
 
 
 " ==================================================================
