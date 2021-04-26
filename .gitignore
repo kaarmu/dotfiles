@@ -2,5 +2,8 @@ local/nvim/undo/
 local/nvim/plugged/
 local/nvim/shada/
 local/nvim/.netrwhist
+local/zathura/history
+local/zathura/input-history
+local/zathura/bookmarks
 local/zsh/history
 local/zsh/plugins/
