@@ -1,3 +1,4 @@
+config/inim/history.nim
 local/nvim/undo/
 local/nvim/plugged/
 local/nvim/shada/
