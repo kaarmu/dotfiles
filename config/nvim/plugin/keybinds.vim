@@ -44,10 +44,10 @@ nnoremap <A-l> <cmd>wincmd l<CR>
 nnoremap <A-.> <cmd>tabnext<CR>
 nnoremap <A-,> <cmd>tabprevious<CR>
 
-nmap <A-H> <C-w><
-nmap <A-J> <C-w>-
-nmap <A-K> <C-w>+
-nmap <A-L> <C-w>>
+nmap <C-A-h> <C-w><
+nmap <C-A-j> <C-w>-
+nmap <C-A-k> <C-w>+
+nmap <C-A-l> <C-w>>
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>

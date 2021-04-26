@@ -73,7 +73,7 @@ hc keybind $Mod-$AltKey-k      split   top     0.5
 hc keybind $Mod-$AltKey-l      split   right   0.5
 
 # let the current frame explode into subframes
-hc keybind $Mod-$AltKey-space split explode
+hc keybind $Mod-x split explode
 
 # resizing frames and floating clients
 resizestep=0.02
