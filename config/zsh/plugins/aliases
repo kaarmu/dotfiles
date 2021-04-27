@@ -19,6 +19,9 @@ alias la='ls -A'
 # Editor
 alias nv="nvim"
 
+# xdg
+alias open="xdg-open"
+
 # Sound
 alias pm='pulsemixer'
 
