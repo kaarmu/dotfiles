@@ -16,6 +16,9 @@ alias la='ls -A'
 
 # System ----------------------------------------------------------------------
 
+# Arch
+alias suspend="systemctl suspend"
+
 # Editor
 alias nv="nvim"
 
