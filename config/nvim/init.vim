@@ -76,8 +76,13 @@ augroup KAARMU
     autocmd BufWritePre * :call TrimWhitespace()
 augroup END
 
-" LSP settings                                                              {{{1
+" Misc settings                                                              {{{1
+
+" LSP completion menu
 set completeopt=menuone,noinsert,noselect
+
+" Neovide
+set guifont=FiraCode\ Nerd\ Font\ Mono,DejaVuSans:h26
 
 " }}}1
 

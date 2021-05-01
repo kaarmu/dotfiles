@@ -21,7 +21,7 @@ alias suspend="systemctl suspend"
 
 # Editor
 if command -v neovide &> /dev/null; then
-    alias nv="neovide --disown --multiGrid"
+    alias nv="neovide --disowned --multiGrid"
 else
     alias nv="nvim"
 fi
