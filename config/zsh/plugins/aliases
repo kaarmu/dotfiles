@@ -1,4 +1,4 @@
-# #! /bin/sh
+#! /bin/sh
 
 # ZSH ALIASES =================================================================
 
@@ -20,7 +20,11 @@ alias la='ls -A'
 alias suspend="systemctl suspend"
 
 # Editor
-alias nv="nvim"
+if command -v neovide &> /dev/null; then
+    alias nv="neovide --disown --multiGrid"
+else
+    alias nv="nvim"
+fi
 
 # xdg
 alias open="xdg-open"
