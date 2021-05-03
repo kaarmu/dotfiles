@@ -20,11 +20,7 @@ alias la='ls -A'
 alias suspend="systemctl suspend"
 
 # Editor
-if command -v neovide &> /dev/null; then
-    alias nv="neovide --disowned --multiGrid"
-else
-    alias nv="nvim"
-fi
+alias nv="nvim"
 
 # xdg
 alias open="xdg-open"
@@ -48,7 +44,7 @@ alias gp='git pull'
 alias ga='git add'
 alias gc='git commit'
 alias gP='git push'
-alias gs='git status'
+alias gs='git fetch; git status'
 alias gl='git log'
 alias gd='git diff'
 alias gr='git restore'
