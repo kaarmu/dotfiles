@@ -1,4 +1,5 @@
 util = require("lspconfig/util")
+local datadir = vim.api.nvim_eval('stdpath("data")')
 
 -- c++ : paru -S ccls
 require'lspconfig'.ccls.setup({
@@ -6,13 +7,12 @@ require'lspconfig'.ccls.setup({
     on_attach=require'completion'.on_attach,
 })
 
--- python : pip install python-language-server
-require'lspconfig'.pyls.setup({
+-- python : https://github.com/microsoft/python-language-server/blob/master/CONTRIBUTING.md
+require'lspconfig'.pyls_ms.setup{
     autostart = true,
-    cmd = { "python","-m", "pyls" },
-    filetypes = { "python" },
-    on_attach=require'completion'.on_attach,
-})
+    cmd = {'dotnet', 'exec',
+           datadir..'/pyls_ms/Microsoft.Python.LanguageServer.dll'}
+}
 
 -- vim : npm install -g vim-language-server
 require'lspconfig'.vimls.setup({
@@ -26,7 +26,7 @@ require'lspconfig'.bashls.setup({
     on_attach=require'completion'.on_attach,
 })
 
--- nim : nimble install nimlsp
+-- nim : nimble install nimlsp. Install nim by choosenim
 require'lspconfig'.nimls.setup({
     on_attach=require'completion'.on_attach
 })
@@ -69,6 +69,6 @@ require'lspconfig'.sumneko_lua.setup {
 
 -- fsharp : Plug 'fsharp/vim-fsharp'
 require'lspconfig'.fsautocomplete.setup{
-  cmd = {'dotnet', '/home/kaarmu/.local/share/nvim/fsac/fsautocomplete.dll', '--background-service-enabled'}
+  cmd = {'dotnet',  datadir..'/fsac/fsautocomplete.dll', '--background-service-enabled'}
 }
 

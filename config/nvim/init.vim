@@ -31,6 +31,7 @@ Plug 'mhinz/vim-signify'
 Plug 'tmhedberg/SimpylFold'
 
 Plug 'gu-fan/riv.vim'
+Plug 'baabelfish/nvim-nim'
 Plug 'alaviss/nim.nvim'
 
 " *-- Git
@@ -82,7 +83,7 @@ augroup END
 set completeopt=menuone,noinsert,noselect
 
 " Neovide
-set guifont=FiraCode\ Nerd\ Font\ Mono,DejaVuSans:h26
+set guifont=FiraCode\ Nerd\ Font\ Mono,DejaVuSans\ Mono,DejaVuSans:h26
 
 " }}}1
 
