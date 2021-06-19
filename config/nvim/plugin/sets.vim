@@ -48,6 +48,7 @@ set clipboard+=unnamedplus      " Always use system clipboard
 
 set nohlsearch  " Start without search highlighting
 set incsearch   " Search while writing
+set ignorecase  " In combination with...
 set smartcase   " Smart case-insensitive search
 
 set completeopt=menuone,noinsert,noselect

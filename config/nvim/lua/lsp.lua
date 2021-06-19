@@ -1,11 +1,8 @@
 util = require("lspconfig/util")
 local datadir = vim.api.nvim_eval('stdpath("data")')
 
--- c++ : paru -S ccls
-require'lspconfig'.ccls.setup({
-    autostart = true,
-    on_attach=require'completion'.on_attach,
-})
+-- c++ : paru -S clang
+require'lspconfig'.clangd.setup({})
 
 -- python : https://github.com/microsoft/python-language-server/blob/master/CONTRIBUTING.md
 require'lspconfig'.pyls_ms.setup{

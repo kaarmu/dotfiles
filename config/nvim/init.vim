@@ -22,17 +22,14 @@ Plug 'co1ncidence/mountaineer.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'mhinz/vim-startify'
+Plug 'bagrat/vim-buffet'
 Plug 'ryanoasis/vim-devicons'
 
 " *-- Editing
-" Plug '9mm/vim-closer'
+" Plug '9mm/vim-closer' " If you want to have auto-close paranthes
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-signify'
 Plug 'tmhedberg/SimpylFold'
-
-Plug 'gu-fan/riv.vim'
-Plug 'baabelfish/nvim-nim'
-Plug 'alaviss/nim.nvim'
 
 " *-- Git
 Plug 'tpope/vim-fugitive'
@@ -47,8 +44,11 @@ Plug 'sotte/presenting.vim'
 " Plug 'daeyun/vim-matlab', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 Plug 'Shougo/deoplete.nvim', { 'do': '<cmd>UpdateRemotePlugins<CR>' }
 Plug 'lervag/vimtex'
-Plug 'fsharp/vim-fsharp'
+Plug 'PhilT/vim-fsharp'
 Plug 'mattn/emmet-vim'
+
+" Plug 'baabelfish/nvim-nim'
+Plug 'alaviss/nim.nvim'
 
 " *-- LSP
 Plug 'neovim/nvim-lspconfig'
@@ -57,12 +57,16 @@ Plug 'nvim-lua/completion-nvim'
 
 call plug#end()
 
+
+" deoplete
+let g:deoplete_at_startup=1
+
+" vimtex
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 let g:conceallevel=1
 let g:tex_conceal='abdmg'
-
 
 " Auto groups                                                               {{{1
 
@@ -79,11 +83,9 @@ augroup END
 
 " Misc settings                                                              {{{1
 
-" LSP completion menu
-set completeopt=menuone,noinsert,noselect
 
 " Neovide
-set guifont=FiraCode\ Nerd\ Font\ Mono,DejaVuSans\ Mono,DejaVuSans:h26
+set guifont=FiraCode\ Nerd\ Font,Fira\ Code,DejaVuSans\ Mono,DejaVuSans:h26
 
 " }}}1
 

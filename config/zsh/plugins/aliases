@@ -19,6 +19,8 @@ alias la='ls -A'
 # Arch
 alias suspend="systemctl suspend"
 
+alias autoremove="sudo pacman -Qtdq | sudo pacman -Rns -"
+
 # Editor
 alias nv="nvim"
 
@@ -35,6 +37,9 @@ alias py="python3"
 # pipenv
 alias pips='pipenv shell'
 alias pipi='pipenv install'
+alias pipc='pipenv clean'
+alias pipg='pipenv graph'
+alias pipu='pipenv uninstall'
 
 # Git -------------------------------------------------------------------------
 
@@ -44,7 +49,7 @@ alias gp='git pull'
 alias ga='git add'
 alias gc='git commit'
 alias gP='git push'
-alias gs='git fetch; git status'
+alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
 alias gr='git restore'
