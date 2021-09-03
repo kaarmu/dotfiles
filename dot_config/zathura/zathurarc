@@ -1,0 +1,78 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# One page per row by default
+set pages-per-row 1
+
+#stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+#zoom settings
+set zoom-min 10
+set guioptions ""
+
+# darkgrey  "#2c2d30"  # 00
+# grey      "#363a3e"  # 08
+# red       "#be868c"  # 01, 09
+# green     "#7f9d77"  # 02, 0A
+# yellow    "#ab916d"  # 03, 0B
+# blue      "#759abd"  # 04, 0C
+# purple    "#a88cb3"  # 05, 0D
+# cyan      "#5da19f"  # 06, 0E
+# lightgrey "#afb7c0"  # 07
+# white     "#cbd2d9"  # 0F
+
+set font "Fira Code 14"
+set default-bg "#2c2d30" #00
+set default-fg "#be868c" #01
+
+set statusbar-fg "#759abd" #04
+set statusbar-bg "#cbd2d9" #01
+set statusbar-h-padding 25
+set statusbar-v-padding 15
+
+set inputbar-bg "#2c2d30" #00 currently not used
+set inputbar-fg "#7f9d77" #02
+
+set notification-error-bg "#be868c"  # 01, 09
+set notification-error-fg "#2c2d30" #00
+
+set notification-warning-bg "#363a3e" #08
+set notification-warning-fg "#2c2d30" #00
+
+set notification-bg "#ab916d" #0B
+set notification-fg "#2c2d30" #00
+
+set highlight-color "#7f9d77" #0A
+set highlight-active-color "#a88cb3" #0D
+
+set completion-bg "#363a3e"  # 08
+set completion-fg "#759abd" #0C
+
+set completion-group-bg "#363a3e"  # 08
+set completion-group-fg "#ab916d"  # 03, 0B
+
+set completion-highlight-bg "#363a3e"  # 08
+set completion-highlight-fg "#a88cb3"  # 05, 0D
+
+set recolor "true"
+set recolor-lightcolor "#2c2d30" #00
+set recolor-darkcolor "#afb7c0"  # 07
+set recolor-reverse-video "true"
+set recolor-keephue "true"
+
+
+set render-loading "false"
+set scroll-step 50
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+set selection-clipboard clipboard
+
+

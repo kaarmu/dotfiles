@@ -1,0 +1,58 @@
+#! /bin/sh
+
+# ZSH ALIASES =================================================================
+
+# General ---------------------------------------------------------------------
+
+# Zsh
+alias rc='$EDITOR $XDG_CONFIG_HOME/zsh/zshrc'
+
+# History
+alias h='history'
+alias hg='history|grep '
+
+# ls
+alias la='ls -A'
+
+# System ----------------------------------------------------------------------
+
+# Arch
+alias suspend="systemctl suspend"
+
+alias autoremove="sudo pacman -Qtdq | sudo pacman -Rns -"
+
+# Editor
+alias nv="nvim"
+
+# xdg
+alias open="xdg-open"
+
+# Sound
+alias pm='pulsemixer'
+
+# Python ----------------------------------------------------------------------
+
+alias py="python3"
+
+# pipenv
+alias pips='pipenv shell'
+alias pipi='pipenv install'
+alias pipc='pipenv clean'
+alias pipg='pipenv graph'
+alias pipu='pipenv uninstall'
+
+# Git -------------------------------------------------------------------------
+
+# basics
+alias gf='git fetch'
+alias gp='git pull'
+alias ga='git add'
+alias gc='git commit'
+alias gP='git push'
+alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
+alias gr='git restore'
+alias gR='cd $(git rev-parse --show-toplevel)'
+alias gi='$EDITOR $(git rev-parse --show-toplevel)/.gitignore'
+

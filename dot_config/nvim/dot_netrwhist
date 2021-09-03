@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/kajarfvidsson/.config/nvim/plugin'
+let g:netrw_dirhist_2='/home/kajarfvidsson/.config/nvim'
+let g:netrw_dirhist_1='/mnt/c/kaarmu/repos/lisa/ada'
+let g:netrw_dirhist_0='/home/kajarfvidsson/.config/zsh'
+let g:netrw_dirhist_9='/home/kajarfvidsson/.config'
+let g:netrw_dirhist_8='/home/kajarfvidsson'
+let g:netrw_dirhist_7='/home/kajarfvidsson/.config/nvim/plugin'
+let g:netrw_dirhist_6='/home/kajarfvidsson/.config/nvim'
+let g:netrw_dirhist_5='/home/kajarfvidsson/.config/nvim/plugin'
+let g:netrw_dirhist_4='/home/kajarfvidsson/.config/nvim'

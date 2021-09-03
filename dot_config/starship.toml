@@ -1,0 +1,26 @@
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$docker_context\
+$env_var\
+$battery\
+$time\
+$line_break\
+$jobs\
+$cmd_duration\
+$status\
+$character"""
+
+[time]
+disabled = false
+time_format = "%R"
+
+[battery]
+disabled = false
