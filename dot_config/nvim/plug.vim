@@ -3,7 +3,6 @@ call plug#begin('~/.local/share/nvim/vim-plug')
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'mhinz/vim-startify'
 Plug 'tmhedberg/SimpylFold'
 Plug 'hoob3rt/lualine.nvim'
 
@@ -30,6 +29,8 @@ Plug 'sainnhe/edge'
 Plug 'kaarmu/darkplus.nvim'
 Plug 'tomasiser/vim-code-dark'
 
+Plug 'glepnir/dashboard-nvim'
+
 " ----
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'famiu/nvim-reload'
@@ -38,3 +39,5 @@ Plug 'lepture/vim-jinja'
 
 call plug#end()
 
+
+let g:dashboard_default_executive = 'telescope'
