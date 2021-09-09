@@ -1,4 +1,3 @@
-
 call plug#begin('~/.local/share/nvim/vim-plug')
 
 Plug 'kyazdani42/nvim-web-devicons'
@@ -39,5 +38,3 @@ Plug 'lepture/vim-jinja'
 
 call plug#end()
 
-
-let g:dashboard_default_executive = 'telescope'

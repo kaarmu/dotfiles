@@ -2,7 +2,9 @@
 " ==============================================================================
 set showmatch       " Show matching braces
 set colorcolumn=    " Vertical ruler
-set nolist          " Do not show any listchars, i.e. tabs or eol:s
+
+set list                        " Show invisible characters, e.g. tabs or eol:s
+set listchars=tab:»·,trail:·    " according to this definition
 
 set foldenable      " Enable folding
 set fdls=10         " Start with all folds folded
@@ -42,7 +44,8 @@ set smartindent
 set scrolloff=4     " The cursor must be at least 4 lines from up/low bound
 
 set backspace=indent,eol,start  " <BS> works on newlines as well
-set clipboard+=unnamedplus      " Always use system clipboard
+" set clipboard+=unnamedplus      " Always use system clipboard, can cause
+" slow startup
 
 set nohlsearch  " Start without search highlighting
 set incsearch   " Search while writing

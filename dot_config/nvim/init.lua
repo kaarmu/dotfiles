@@ -1,14 +1,27 @@
 -- Neovim configuration file
 -- Author: kaarmu
 --------------------------------------------------------------------------------
--- PLUGINS
+-- General
 
 vim.cmd 'source ~/.config/nvim/plug.vim'
 
-vim.cmd 'set list'
-vim.cmd 'set listchars=tab:»·,trail:·'
+vim.g.mapleader = ';'
 
-vim.cmd 'autocmd TermOpen * setlocal nonu nornu'
+
+--------------------------------------------------------------------------------
+-- Dashboard
+
+vim.g.dashboard_default_executive = 'telescope'
+
+vim.g.dashboard_custom_shortcut = {
+    last_session       = vim.g.mapleader .. ' s l',
+    find_history       = vim.g.mapleader .. ' f h',
+    find_file          = vim.g.mapleader .. ' f f',
+    new_file           = vim.g.mapleader .. ' c n',
+    change_colorscheme = vim.g.mapleader .. ' t c',
+    find_word          = vim.g.mapleader .. ' f a',
+    book_marks         = vim.g.mapleader .. ' f b',
+}
 
 
 --------------------------------------------------------------------------------
@@ -83,6 +96,11 @@ vim.g.nvim_tree_auto_close = 1              -- 0 by default, closes the tree whe
 vim.g.nvim_tree_highlight_opened_files = 1  -- 0 by default, will enable folder and file icon highlight for opened files/directories.
 vim.g.nvim_tree_lsp_diagnostics = 1         -- 0 by default, will show lsp diagnostics in the signcolumn. See :help nvim_tree_lsp_diagnostics
 
+
+--------------------------------------------------------------------------------
+-- completion-nvim
+
+vim.g.completion_matching_strategy_lst = {'exact', 'substring', 'fuzzy'}
 
 
 -- Temporary configurations for development

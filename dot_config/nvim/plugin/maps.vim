@@ -2,8 +2,6 @@
 " ==============================================================================
 " Vim                                                                       {{{1
 " ------------------------------------------------------------------------------
-let mapleader=";"
-
 inoremap <silent> <leader><leader> <Esc>
 vnoremap <silent> <leader><leader> <Esc>
 cnoremap <silent> <leader><leader> <Esc>
@@ -109,14 +107,6 @@ nnoremap <silent> <leader>t, <cmd>-tabnew<CR>
 nnoremap <silent> <leader>tw <cmd>tab split<CR>
 nnoremap <silent> <leader>tt <cmd>tab terminal<CR>
 nnoremap <leader>tq <cmd>confirm tabclose<CR>
-
-" Terminal                                                                  {{{1
-" ------------------------------------------------------------------------------
-        " terminal right/left/down/up
-nnoremap <silent> <leader>tr <cmd>bel vs term://zsh<CR>
-nnoremap <silent> <leader>tl <cmd>abo vs term://zsh<CR>
-nnoremap <silent> <leader>td <cmd>bel sp term://zsh<CR>
-nnoremap <silent> <leader>tu <cmd>abo sp term://zsh<CR>
 
 " Find (files) & Explorer                                                   {{{1
 " ------------------------------------------------------------------------------
