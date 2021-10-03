@@ -93,10 +93,10 @@ require('lspsaga').init_lsp_saga {
 
 
 require('nvim-tree').setup {
-    nvim_tree_auto_open = 0               -- 0 by default, opens the tree when typing `vim $DIR` or `vim`
-    nvim_tree_auto_close = 1              -- 0 by default, closes the tree when it's the last window
-    nvim_tree_highlight_opened_files = 1  -- 0 by default, will enable folder and file icon highlight for opened files/directories.
-    nvim_tree_lsp_diagnostics = 1         -- 0 by default, will show lsp diagnostics in the signcolumn. See :help nvim_tree_lsp_diagnostics
+    nvim_tree_auto_open = 0,               -- 0 by default, opens the tree when typing `vim $DIR` or `vim`
+    nvim_tree_auto_close = 1,              -- 0 by default, closes the tree when it's the last window
+    nvim_tree_highlight_opened_files = 1,  -- 0 by default, will enable folder and file icon highlight for opened files/directories.
+    nvim_tree_lsp_diagnostics = 1,         -- 0 by default, will show lsp diagnostics in the signcolumn. See :help nvim_tree_lsp_diagnostics
 }
 
 --------------------------------------------------------------------------------
