@@ -13,6 +13,7 @@ $env_var\
 $battery\
 $time\
 $line_break\
+$python\
 $jobs\
 $cmd_duration\
 $status\
@@ -24,3 +25,6 @@ time_format = "%R"
 
 [battery]
 disabled = false
+
+[python]
+format = '[${pyenv_prefix}(${version})(\($virtualenv\))]($style)'
