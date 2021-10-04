@@ -27,4 +27,4 @@ time_format = "%R"
 disabled = false
 
 [python]
-format = '[${pyenv_prefix}(${version})(\($virtualenv\))]($style)'
+format = '[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
