@@ -7,6 +7,8 @@ vim.cmd 'source ~/.config/nvim/plug.vim'
 
 vim.g.mapleader = ';'
 
+vim.g.darkplus_treesitter = require('darkplus.treesitter').python
+
 
 --------------------------------------------------------------------------------
 -- Dashboard
@@ -27,22 +29,23 @@ vim.g.dashboard_custom_shortcut = {
 --------------------------------------------------------------------------------
 -- Treesitter
 
--- require('nvim-treesitter.configs').setup {
---     highlight = {
---         enable = true,
---         disable = {},
---     },
---     indent = {
---         enable = true,
---         disable = {},
---     },
---     ensure_installed = {
---         'c',
---         'cpp',
---         'python',
---         'lua',
---     }
--- }
+require('nvim-treesitter.configs').setup {
+    highlight = {
+        enable = true,
+        disable = {},
+    },
+    indent = {
+        enable = true,
+        disable = {},
+    },
+    ensure_installed = {
+        'comment',
+        -- 'c',
+        -- 'cpp',
+        'python',
+        -- 'lua',
+    }
+}
 
 
 --------------------------------------------------------------------------------

@@ -22,7 +22,7 @@ Plug 'cohama/lexima.vim'
 Plug 'ray-x/lsp_signature.nvim'
 " use 'stevearc/aerial.nvim'
 
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'sainnhe/edge'
 Plug 'kaarmu/darkplus.nvim'
@@ -31,6 +31,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'glepnir/dashboard-nvim'
 
 " ----
+Plug 'nvim-treesitter/playground'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'famiu/nvim-reload'
 Plug 'lepture/vim-jinja'

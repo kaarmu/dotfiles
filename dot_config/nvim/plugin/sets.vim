@@ -44,7 +44,7 @@ set smartindent
 set scrolloff=4     " The cursor must be at least 4 lines from up/low bound
 
 set backspace=indent,eol,start  " <BS> works on newlines as well
-" set clipboard+=unnamedplus      " Always use system clipboard, can cause
+set clipboard+=unnamedplus      " Always use system clipboard, can cause
 " slow startup
 
 set nohlsearch  " Start without search highlighting
