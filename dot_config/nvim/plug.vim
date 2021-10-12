@@ -32,6 +32,7 @@ Plug 'glepnir/dashboard-nvim'
 
 " ----
 Plug 'nvim-treesitter/playground'
+Plug 'rafcamlet/nvim-luapad'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'famiu/nvim-reload'
 Plug 'lepture/vim-jinja'

@@ -5,7 +5,7 @@
 
 vim.cmd 'source ~/.config/nvim/plug.vim'
 
-vim.g.mapleader = ';'
+vim.g.mapleader = '\\'
 
 vim.g.darkplus_treesitter = require('darkplus.treesitter').python
 
