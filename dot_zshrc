@@ -56,7 +56,7 @@ done
 # ----------------------------------------
 # Third-party plugins
 
-zplg add "zdharma/fast-syntax-highlighting" "fast-syntax-highlighting.plugin.zsh"
+zplg add "zdharma-continuum/fast-syntax-highlighting" "fast-syntax-highlighting.plugin.zsh"
 zplg add "MichaelAquilina/zsh-you-should-use" "you-should-use.plugin.zsh"
 
 # ----------------------------------------
