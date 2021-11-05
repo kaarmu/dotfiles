@@ -3,6 +3,8 @@
 --------------------------------------------------------------------------------
 -- General
 
+vim.cmd [[ set guifont=FiraCode\ Nerd\ Font:h16 ]]
+
 vim.cmd 'source ~/.config/nvim/plug.vim'
 
 vim.g.mapleader = '\\'
@@ -83,10 +85,10 @@ require('gitsigns').setup()
 
 require('lspsaga').init_lsp_saga {
     -- use_saga_diagnostic_sign = false,
-    error_sign = '\u{f659}', -- close circle
-    warn_sign = '\u{fad5}', -- alert circle
-    hint_sign = '\u{fb24}', -- help circle
-    infor_sign = '\u{f7fc}', -- information outline
+    error_sign = '', -- close circle
+    warn_sign = '𥉉', -- alert circle
+    hint_sign = 'ﬤ', -- help circle
+    infor_sign = '', -- information outline
     border_style = 'round',
 }
 
