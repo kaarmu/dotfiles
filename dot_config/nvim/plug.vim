@@ -24,18 +24,14 @@ Plug 'ray-x/lsp_signature.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'sainnhe/edge'
-Plug 'kaarmu/darkplus.nvim'
-Plug 'tomasiser/vim-code-dark'
+Plug 'Mofiqul/vscode.nvim'
 
 Plug 'glepnir/dashboard-nvim'
 
 " ----
 Plug 'nvim-treesitter/playground'
 Plug 'rafcamlet/nvim-luapad'
-Plug 'norcalli/nvim-colorizer.lua'
 Plug 'famiu/nvim-reload'
-Plug 'lepture/vim-jinja'
 " ----
 
 call plug#end()

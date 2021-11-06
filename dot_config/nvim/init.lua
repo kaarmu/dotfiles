@@ -9,9 +9,6 @@ vim.cmd 'source ~/.config/nvim/plug.vim'
 
 vim.g.mapleader = '\\'
 
-vim.g.darkplus_treesitter = require('darkplus.treesitter').python
-
-
 --------------------------------------------------------------------------------
 -- Dashboard
 
@@ -70,7 +67,7 @@ require('telescope').setup {
 require('plenary.reload').reload_module('lualine', true)
 
 require('lualine').setup {
-    options = { theme = 'darkplus' }
+    options = { theme = 'vscode' }
 }
 
 
@@ -108,16 +105,5 @@ require('nvim-tree').setup {
 -- completion-nvim
 
 vim.g.completion_matching_strategy_lst = {'exact', 'substring', 'fuzzy'}
-
-
--- Temporary configurations for development
---------------------------------------------------------------------------------
-
-vim.cmd 'set termguicolors'
-require('colorizer').setup()
-
-vim.cmd [[nnoremap <leader>qs <cmd>lua require('darkplus').query_syntax()<CR>]]
-vim.cmd 'command! QuerySyntax lua require("darkplus").query_syntax()'
-
 
 

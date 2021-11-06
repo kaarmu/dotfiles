@@ -1,11 +1,6 @@
 #! /bin/sh
 
-# ZSH ALIASES =================================================================
-
 # General ---------------------------------------------------------------------
-
-# Zsh
-alias rc='$EDITOR $XDG_CONFIG_HOME/zsh/zshrc'
 
 # History
 alias h='history'
@@ -30,6 +25,10 @@ alias open="xdg-open"
 # Sound
 alias pm='pulsemixer'
 
+# chezmoi ---------------------------------------------------------------------
+
+alias cz='chezmoi'
+
 # Python ----------------------------------------------------------------------
 
 alias py="python3"
@@ -48,11 +47,11 @@ alias gf='git fetch'
 alias gp='git pull'
 alias ga='git add'
 alias gc='git commit'
+alias gC='git checkout'
 alias gP='git push'
 alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
 alias gr='git restore'
-alias gR='cd $(git rev-parse --show-toplevel)'
-alias gi='$EDITOR $(git rev-parse --show-toplevel)/.gitignore'
+alias gR='git reset'
 
