@@ -35,10 +35,10 @@ set splitright      " right is the default direction for vspl
 set splitbelow      " below is the default direction for spl
 
 " Tabs
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=4       " how many columns of whitespace is a \t char worth?
+set softtabstop=4   " how many columns of whitespace is a tab keypress or a backspace keypress worth?
+set shiftwidth=4    " how many columns of whitespace a “level of indentation” is worth?
+set expandtab       " tab keypresses will be expanded into spaces
 set smartindent
 
 set scrolloff=4     " The cursor must be at least 4 lines from up/low bound

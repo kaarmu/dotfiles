@@ -9,6 +9,12 @@ vim.cmd 'source ~/.config/nvim/plug.vim'
 
 vim.g.mapleader = '\\'
 
+vim.api.nvim_set_keymap(
+    'i','<S-Tab>',
+    [[<cmd>lua require('play').remove_tab_on_current_line()<CR>]],
+    { noremap = true, silent = true }
+)
+
 --------------------------------------------------------------------------------
 -- Dashboard
 
@@ -187,16 +193,10 @@ cmp.setup {
                 fallback()
             end
         end,
-        ['<Enter>'] = function(fallback)
-            if cmp.visible() then
-                cmp.mapping.confirm({
-                    behaviour = cmp.ConfirmBehavior.Insert,
-                    select = true,
-                })
-            else
-                fallback()
-            end
-        end,
+        ['<CR>'] = cmp.mapping.confirm({
+            behaviour = cmp.ConfirmBehavior.Insert,
+            select = true,
+        }),
     },
     sources = {
         { name = 'gh_issues' },
