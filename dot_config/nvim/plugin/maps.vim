@@ -126,13 +126,6 @@ nnoremap <silent> <leader>fa zM
         " fold none
 nnoremap <silent> <leader>fn zR
 
-" Complete Menu                                                             {{{1
-" ------------------------------------------------------------------------------
-" Use <Tab> and <S-Tab> to navigate through popup menu
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <CR> pumvisible() ? (complete_info().selected == -1 ? '<C-e><CR>' : '<C-y>') : '<CR>'
-
 " Plugins                                                                   {{{1
 " ------------------------------------------------------------------------------
 
