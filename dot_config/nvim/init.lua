@@ -3,17 +3,18 @@
 --------------------------------------------------------------------------------
 -- General
 
-vim.cmd [[ set guifont=FiraCode\ Nerd\ Font:h16 ]]
-
-vim.cmd 'source ~/.config/nvim/plug.vim'
+require('plugins')
 
 vim.g.mapleader = '\\'
+
+vim.cmd [[ set guifont=FiraCode\ Nerd\ Font:h16 ]]
 
 vim.api.nvim_set_keymap(
     'i','<S-Tab>',
     [[<cmd>lua require('play').remove_tab_on_current_line()<CR>]],
     { noremap = true, silent = true }
 )
+
 
 --------------------------------------------------------------------------------
 -- Dashboard
