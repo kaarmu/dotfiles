@@ -28,11 +28,6 @@ nnoremap <silent> <leader>sa :nohlsearch<CR>
 
 " Move                                                                      {{{1
 " ------------------------------------------------------------------------------
-nnoremap H ^
-nnoremap J <cmd>+10<CR>
-nnoremap K <cmd>-10<CR>
-nnoremap L $
-
 nnoremap <A-h> <cmd>wincmd h<CR>
 nnoremap <A-j> <cmd>wincmd j<CR>
 nnoremap <A-k> <cmd>wincmd k<CR>

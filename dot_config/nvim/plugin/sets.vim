@@ -1,4 +1,5 @@
-" sets.vim, kaarmu
+" Neovim settings
+" Author: kaarmu
 " ==============================================================================
 set showmatch       " Show matching braces
 set colorcolumn=    " Vertical ruler
@@ -11,7 +12,7 @@ set fdls=10         " Start with all folds folded
 set foldnestmax=3   " More than three folds should not be necessary
 
 set noerrorbells    " No warning sounds ofc
-set nu nornu        " Normal numbering at start
+set nu rnu          " Normal numbering at start
 set noswapfile      " Don't have stupid swaps
 set nobackup        " Don't need backup either
 " set undofile        " Default location is XDG_DATA_HOME/nvim/undo
@@ -44,8 +45,7 @@ set smartindent
 set scrolloff=4     " The cursor must be at least 4 lines from up/low bound
 
 set backspace=indent,eol,start  " <BS> works on newlines as well
-set clipboard+=unnamedplus      " Always use system clipboard, can cause
-" slow startup
+set clipboard+=unnamedplus      " Always use system clipboard, can cause slow startup
 
 set nohlsearch  " Start without search highlighting
 set incsearch   " Search while writing
@@ -54,8 +54,5 @@ set smartcase   " Smart case-insensitive search
 
 set completeopt=menuone,noinsert,noselect
 set pumheight=10
-
-set exrc
-set secure
 
 " ==============================================================================
