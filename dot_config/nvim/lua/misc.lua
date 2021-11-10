@@ -1,4 +1,4 @@
--- Play functions for my config
+-- Misc functions for my config
 --------------------------------------------------------------------------------
 
 local M = {}
