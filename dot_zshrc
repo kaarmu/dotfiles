@@ -1,6 +1,21 @@
-# --------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# Checking xdg user dirs
+
+if [ ! -d $XDG_CONFIG_HOME ]; then
+    echo 'Missing $XDG_CONFIG_HOME'
+    return
+fi
+if [ ! -d $XDG_DATA_HOME ]; then
+    echo 'Missing $XDG_DATA_HOME'
+    return
+fi
+if [ ! -d $XDG_CACHE_HOME ]; then
+    echo 'Missing $XDG_CACHE_HOME'
+    return
+fi
+
+# ------------------------------------------------------------------------------
 # Raw zsh stuff
-#
 
 # Enable colors and change prompt
 autoload -U colors && colors
@@ -25,10 +40,8 @@ autoload -Uz compinit
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 # End of lines added by compinstall
 
-
-# --------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Keybindings
-#
 
 # Emacs style keybindings
 bindkey -e
@@ -41,25 +54,23 @@ bindkey "^[[H"      beginning-of-line
 bindkey "^[[F"      end-of-line
 bindkey "^[[3~"     delete-char
 
-
-# --------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Plugins, aliases and minor tweaks
-#
 
-# ----------------------------------------
+# --------------------------------------
 # Source my own scripts
 
 for fp in $XDG_CONFIG_HOME/zsh/plugins/*; do
     source $fp
 done
 
-# ----------------------------------------
+# --------------------------------------
 # Third-party plugins
 
 zplg add "zdharma-continuum/fast-syntax-highlighting" "fast-syntax-highlighting.plugin.zsh"
 zplg add "MichaelAquilina/zsh-you-should-use" "you-should-use.plugin.zsh"
 
-# ----------------------------------------
+# --------------------------------------
 # Tweaks
 
 # Enable color support of ls and also add handy aliases
@@ -70,9 +81,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
 fi
 
-
-# --------------------------------------------------------------------------------
-# Starship
-#
+# ------------------------------------------------------------------------------
+# Prompt
 
 eval "$(starship init zsh)"
+
