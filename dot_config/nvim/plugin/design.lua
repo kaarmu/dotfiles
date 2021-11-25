@@ -1,4 +1,4 @@
--- Neovim design, kaarmu
+-- Neovim design
 -- Author: kaarmu
 --------------------------------------------------------------------------------
 -- Colorscheme

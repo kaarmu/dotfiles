@@ -22,7 +22,6 @@ set updatetime=50   " To make vim snappier (?)
 set autoread        " Read automatically from outside changes
 set enc=utf-8       " vim display encoding
 set fenc=utf-8      " output encoding
-set modelineexpr    " allow small vim commands at begin/end of file
 set mouse=nvi       " enable mouse support in n-v-i modes
 
 set linebreak       " if wrap is on, the line is only visually wrapped

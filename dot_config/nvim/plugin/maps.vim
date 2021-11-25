@@ -7,21 +7,15 @@ vnoremap <silent> <leader><leader> <Esc>
 cnoremap <silent> <leader><leader> <Esc>
 tnoremap <silent> <leader><leader> <C-\><C-n>
 
-        " start vim
-nnoremap <silent> <leader>sv :Startify<CR>
         " edit config
 nnoremap <silent> <leader>ec :e ~/.config/nvim/init.lua<CR>
-        " edit keyboard (config)
-nnoremap <silent> <leader>ek :e ~/.config/nvim/plugin/maps.vim<CR>
 
         " Toggle ---
 nnoremap <silent> <leader>Tn :set rnu!<CR>:set nu!<CR>
 nnoremap <silent> <leader>Tw :set wrap!<CR>
 nnoremap <silent> <leader>Tc :execute "set colorcolumn="
-                  \ . (&colorcolumn == "" ? "80" : "")<CR>
+                                \ . (&colorcolumn == "" ? "80" : "")<CR>
 nnoremap <silent> <leader>Tl :set cursorline!<CR>
-nnoremap <silent> <leader>Ts :execute "set laststatus="
-                  \ . (&laststatus == "0" ? "2" : "0")<CR>
 
         " search abort
 nnoremap <silent> <leader>sa :nohlsearch<CR>
@@ -52,22 +46,12 @@ inoremap <A-l> <Esc><cmd>wincmd l<CR>
 inoremap <A-.> <Esc><cmd>tabnext<CR>
 inoremap <A-,> <Esc><cmd>tabprevious<CR>
 
-
-vnoremap H ^
-vnoremap J <cmd>+10<CR>
-vnoremap K <cmd>-10<CR>
-vnoremap L $h
-
 vnoremap <A-h> <cmd>wincmd h<CR>
 vnoremap <A-j> <cmd>wincmd j<CR>
 vnoremap <A-k> <cmd>wincmd k<CR>
 vnoremap <A-l> <cmd>wincmd l<CR>
 vnoremap <A-.> <cmd>tabnext<CR>
 vnoremap <A-,> <cmd>tabprevious<CR>
-
-onoremap H ^
-onoremap L $
-
 
 tnoremap <A-h> <C-\><C-n><cmd>wincmd h<CR>
 tnoremap <A-j> <C-\><C-n><cmd>wincmd j<CR>
@@ -107,9 +91,6 @@ nnoremap <leader>tq <cmd>confirm tabclose<CR>
 " ------------------------------------------------------------------------------
         " explorer
 nnoremap <silent> <leader>ep :Explore<CR>
-        " find files/grep
-nnoremap <silent> <leader>ff <cmd>Telescope find_files<CR>
-nnoremap <silent> <leader>fg <cmd>Telescope live_grep<CR>
 
 " Fold                                                                      {{{1
 " ------------------------------------------------------------------------------
@@ -120,11 +101,6 @@ nnoremap <silent> <leader>fT zA
 nnoremap <silent> <leader>fa zM
         " fold none
 nnoremap <silent> <leader>fn zR
-
-" Plugins                                                                   {{{1
-" ------------------------------------------------------------------------------
-
-nnoremap <silent> <leader>ep :NvimTreeToggle<CR>
 
 "                                                                           }}}1
 " ==============================================================================

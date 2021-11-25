@@ -1,9 +1,11 @@
 " autos.vim, kaarmu
 " ==============================================================================
-" Autogroups                                                                {{{1
+" Autocmds                                                                  {{{1
 " ------------------------------------------------------------------------------
 
 autocmd TermOpen * setlocal nonu nornu
+
+autocmd FileType vim,lua setlocal foldmethod=marker
 
 
 " Autogroups                                                                {{{1
@@ -19,8 +21,6 @@ augroup AllBuffers
     autocmd!
     autocmd BufWritePre * :call TrimeWhitespace()
 augroup END
-
-autocmd FileType vim,lua setlocal foldmethod=marker
 
 
 "                                                                           }}}1
