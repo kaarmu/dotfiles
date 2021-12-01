@@ -35,5 +35,6 @@ end
 vim.cmd [[ syntax on ]]
 vim.o.termguicolors = true
 
+set_dark()
 auto_colorscheme(6, set_light, 18, set_dark)
 

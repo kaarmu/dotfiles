@@ -1,4 +1,4 @@
-" Neovim settings
+" Vim settings
 " Author: kaarmu
 " ==============================================================================
 set showmatch       " Show matching braces
@@ -17,7 +17,7 @@ set noswapfile      " Don't have stupid swaps
 set nobackup        " Don't need backup either
 " set undofile        " Default location is XDG_DATA_HOME/nvim/undo
 set termguicolors   " Enable 24-bit RGB color in terminal
-set signcolumn=number " Always show the sign column
+set signcolumn=auto " Always show the sign column
 set updatetime=50   " To make vim snappier (?)
 set autoread        " Read automatically from outside changes
 set enc=utf-8       " vim display encoding

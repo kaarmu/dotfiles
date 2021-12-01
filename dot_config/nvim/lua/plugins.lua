@@ -18,11 +18,9 @@ end
 --------------------------------------------------------------------------------
 -- List plugins
 
-vim.cmd [[ packadd packer.nvim ]]
-
 return require('packer').startup(function(use)
 
-    use {'wbthomason/packer.nvim', opt = true}
+    use 'wbthomason/packer.nvim'
 
     -- nice UX
     use 'kyazdani42/nvim-web-devicons'

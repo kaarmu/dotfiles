@@ -1,9 +1,14 @@
-" autos.vim, kaarmu
+" Vim auto-cmds and groups
+" Author: kaarmu
 " ==============================================================================
 " Autocmds                                                                  {{{1
 " ------------------------------------------------------------------------------
 
-autocmd TermOpen * setlocal nonu nornu
+if has('nvim')
+    autocmd TermOpen * setlocal nonu nornu
+else
+    autocmd TerminalWinOpen * setlocal nonu nornu
+endif
 
 autocmd FileType vim,lua setlocal foldmethod=marker
 
