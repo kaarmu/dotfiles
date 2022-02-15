@@ -3,8 +3,6 @@
 --------------------------------------------------------------------------------
 -- General
 
-vim.g.mapleader = '\\'
-
 vim.cmd [[ set guifont=FiraCode\ Nerd\ Font:h16 ]]
 
 vim.api.nvim_set_keymap(
@@ -22,13 +20,13 @@ require('plugins')
 vim.g.dashboard_default_executive = 'telescope'
 
 vim.g.dashboard_custom_shortcut = {
-    last_session       = vim.g.mapleader .. 'sl',
-    find_history       = vim.g.mapleader .. 'fh',
-    find_file          = vim.g.mapleader .. 'ff',
-    new_file           = vim.g.mapleader .. 'cn',
-    change_colorscheme = vim.g.mapleader .. 'tc',
-    find_word          = vim.g.mapleader .. 'fa',
-    book_marks         = vim.g.mapleader .. 'fb',
+    last_session       = '\\sl',
+    find_history       = '\\fh',
+    find_file          = '\\ff',
+    new_file           = '\\cn',
+    change_colorscheme = '\\tc',
+    find_word          = '\\fa',
+    book_marks         = '\\fb',
 }
 
 
@@ -50,7 +48,8 @@ require('nvim-treesitter.configs').setup {
         'cpp',
         'python',
         'lua',
-        -- 'zig',
+        'svelte',
+        'zig',
     }
 }
 
@@ -99,6 +98,7 @@ local servers = {
     clangd = {},
     pylsp = {},
     zls = {},
+    svelte = {},
 }
 
 for server, options in pairs(servers) do
@@ -174,8 +174,8 @@ local cmp = require('cmp')
 
 cmp.setup {
     mapping = {
-        ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-        ['<C-f>'] = cmp.mapping.scroll_docs(4),
+        ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-d>'] = cmp.mapping.scroll_docs(4),
         ['<C-e>'] = cmp.mapping.close(),
         ['<C-y>'] = cmp.mapping.confirm({
             behaviour = cmp.ConfirmBehavior.Insert,
