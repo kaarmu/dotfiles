@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
 
     -- nice UX
     use 'kyazdani42/nvim-web-devicons'
-    use 'kyazdani42/nvim-tree.lua'
+    use 'tpope/vim-vinegar'
     use 'glepnir/dashboard-nvim'
     use 'hoob3rt/lualine.nvim'
     use {'junegunn/goyo.vim', opt = true}
@@ -61,6 +61,7 @@ return require('packer').startup(function(use)
 
     -- special language support
     use {'ziglang/zig.vim', ft = {'zig'}}
+    use {'mattn/emmet-vim', opt = true }
 
     -- Auto-sync during bootstrap
     if packer_bootstrap then

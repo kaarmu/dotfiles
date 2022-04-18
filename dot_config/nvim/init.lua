@@ -19,14 +19,14 @@ require('plugins')
 
 vim.g.dashboard_default_executive = 'telescope'
 
-vim.g.dashboard_custom_shortcut = {
-    last_session       = '\\sl',
-    find_history       = '\\fh',
-    find_file          = '\\ff',
-    new_file           = '\\cn',
-    change_colorscheme = '\\tc',
-    find_word          = '\\fa',
-    book_marks         = '\\fb',
+vim.g.dashboard_custom_section = {
+    a_last_session       = { description = {'   Open last session          \\sl'}, command = '' },
+    b_new_file           = { description = {'   New file                   \\cn'}, command = 'DashboardNewFile' },
+    c_find_history       = { description = {'   Recently opened files      \\fh'}, command = 'DashboardFindHistory' },
+    d_find_file          = { description = {'   Find file                  \\ff'}, command = 'DashboardFindFile' },
+    e_find_word          = { description = {'   Find word                  \\fa'}, command = 'DashboardFindWord' },
+    f_change_colorscheme = { description = {'   Change colorscheme         \\tc'}, command = 'DashboardChangeColorscheme' },
+    g_exit               = { description = {'    Exit                       \\wq'}, command = '<cmd>confirm q<CR>' },
 }
 
 
@@ -153,19 +153,6 @@ require('lspsaga').init_lsp_saga {
     code_action_prompt = { enable = false },
 }
 
-
---------------------------------------------------------------------------------
--- Nvim Tree
-
-
-require('nvim-tree').setup {
-    nvim_tree_auto_close = true,            -- false by default, closes the tree when it's the last window
-    nvim_tree_highlight_opened_files = 2,   -- 0 by default, 2 = Enable highligting for folders and file names only.
-    diagnostics = {
-        enable = true,                      -- false by default, enable/disable the feature
-    },
-    update_cwd = 1,                         -- false by default, changes the tree root directory on `DirChanged` and refreshes the tree.
-}
 
 --------------------------------------------------------------------------------
 -- nvim-cmp
