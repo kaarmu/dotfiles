@@ -27,7 +27,7 @@ set guioptions ""
 # lightgrey "#afb7c0"  # 07
 # white     "#cbd2d9"  # 0F
 
-set font "Fira Code 14"
+# set font "Fira Code 14"
 set default-bg "#2c2d30" #00
 set default-fg "#be868c" #01
 
