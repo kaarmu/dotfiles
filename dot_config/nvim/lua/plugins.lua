@@ -25,7 +25,6 @@ return require('packer').startup(function(use)
     -- nice UX
     use 'kyazdani42/nvim-web-devicons'
     use 'tpope/vim-vinegar'
-    use 'glepnir/dashboard-nvim'
     use 'hoob3rt/lualine.nvim'
     use {'junegunn/goyo.vim', opt = true}
 

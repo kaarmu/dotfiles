@@ -15,22 +15,6 @@ require('plugins')
 
 
 --------------------------------------------------------------------------------
--- Dashboard
-
-vim.g.dashboard_default_executive = 'telescope'
-
-vim.g.dashboard_custom_section = {
-    a_last_session       = { description = {'   Open last session          \\sl'}, command = '' },
-    b_new_file           = { description = {'   New file                   \\cn'}, command = 'DashboardNewFile' },
-    c_find_history       = { description = {'   Recently opened files      \\fh'}, command = 'DashboardFindHistory' },
-    d_find_file          = { description = {'   Find file                  \\ff'}, command = 'DashboardFindFile' },
-    e_find_word          = { description = {'   Find word                  \\fa'}, command = 'DashboardFindWord' },
-    f_change_colorscheme = { description = {'   Change colorscheme         \\tc'}, command = 'DashboardChangeColorscheme' },
-    g_exit               = { description = {'    Exit                       \\wq'}, command = '<cmd>confirm q<CR>' },
-}
-
-
---------------------------------------------------------------------------------
 -- Treesitter
 
 require('nvim-treesitter.configs').setup {
