@@ -16,9 +16,6 @@ alias suspend="systemctl suspend"
 
 alias autoremove="sudo pacman -Qtdq | sudo pacman -Rns -"
 
-# Editor
-alias nv="nvim"
-
 # xdg
 alias open="xdg-open"
 
@@ -30,8 +27,6 @@ alias pm='pulsemixer'
 alias cz='chezmoi'
 
 # Python ----------------------------------------------------------------------
-
-alias py="python3"
 
 # pipenv
 alias pips='pipenv shell'
