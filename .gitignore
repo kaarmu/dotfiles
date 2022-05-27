@@ -1,2 +1,3 @@
 dot_config/nvim/dot_netrwhist
 dot_config/nvim/dot_viminfo
+dot_config/nvim/plugin/packer_compiled.lua

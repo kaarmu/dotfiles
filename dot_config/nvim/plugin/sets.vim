@@ -39,6 +39,7 @@ set tabstop=4       " how many columns of whitespace is a \t char worth?
 set softtabstop=4   " how many columns of whitespace is a tab keypress or a backspace keypress worth?
 set shiftwidth=4    " how many columns of whitespace a “level of indentation” is worth?
 set expandtab       " tab keypresses will be expanded into spaces
+set autoindent
 set smartindent
 
 set scrolloff=4     " The cursor must be at least 4 lines from up/low bound

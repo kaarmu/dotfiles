@@ -190,6 +190,9 @@ return require('packer').startup(function(use)
     -- Nice UX
     use 'kyazdani42/nvim-web-devicons'
     use 'tpope/vim-vinegar'
+    use 'tpope/vim-surround'
+    use 'tpope/vim-unimpaired'
+    use 'tpope/vim-repeat'
     use { 'junegunn/goyo.vim', opt = true }
     use {
         'hoob3rt/lualine.nvim',
