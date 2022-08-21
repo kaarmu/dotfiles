@@ -62,7 +62,7 @@ return require('packer').startup(function(use)
             }
         end,
     }
-    use { 'nvim-treesitter/playground', after = 'nvim-treesitter' }
+    use { 'nvim-treesitter/playground', after = 'nvim-treesitter', opt = true }
 
     -- LSP
     use {
@@ -86,6 +86,7 @@ return require('packer').startup(function(use)
                 keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
                 keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
                 keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+                keymap('n', '<C-f>', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 
             end
 
@@ -107,9 +108,10 @@ return require('packer').startup(function(use)
 
             local servers = {
                 clangd = {},
+                eslint = {},
                 pyright = {},
-                zls = {},
                 svelte = {},
+                zls = {},
             }
 
             for server, options in pairs(servers) do
@@ -189,6 +191,7 @@ return require('packer').startup(function(use)
 
     -- Nice UX
     use 'kyazdani42/nvim-web-devicons'
+    use 'tpope/vim-commentary'
     use 'tpope/vim-vinegar'
     use 'tpope/vim-surround'
     use 'tpope/vim-unimpaired'
