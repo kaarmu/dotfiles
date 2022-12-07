@@ -21,13 +21,11 @@ local function auto_colorscheme(light_time, light_cb, dark_time, dark_cb)
 end
 
 local function set_light()
-    vim.g.vscode_style = 'light'
-    vim.cmd [[ colorscheme vscode ]]
+    vim.cmd [[ colorscheme morning ]]
 end
 
 local function set_dark()
-    vim.g.vscode_style = 'dark'
-    vim.cmd [[ colorscheme vscode ]]
+    vim.cmd [[ colorscheme evening ]]
 end
 
 -- set colorschemes etc.

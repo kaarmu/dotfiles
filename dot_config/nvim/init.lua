@@ -104,7 +104,7 @@ return require('packer').startup(function(use)
                 '',        '',    'ﬦ',        '',
             }
 
-            local capabilities = require('cmp_nvim_lsp').update_capabilities(proto.make_client_capabilities())
+            local capabilities = require('cmp_nvim_lsp').default_capabilities(proto.make_client_capabilities())
 
             local servers = {
                 clangd = {},
@@ -190,25 +190,12 @@ return require('packer').startup(function(use)
     }
 
     -- Nice UX
-    use 'kyazdani42/nvim-web-devicons'
     use 'tpope/vim-commentary'
     use 'tpope/vim-vinegar'
     use 'tpope/vim-surround'
     use 'tpope/vim-unimpaired'
     use 'tpope/vim-repeat'
     use { 'junegunn/goyo.vim', opt = true }
-    use {
-        'hoob3rt/lualine.nvim',
-        requires = 'kyazdani42/nvim-web-devicons',
-        config = function()
-            require('lualine').setup {
-                options = { theme = 'vscode' }
-            }
-        end,
-    }
-
-    -- Theme
-    use 'Mofiqul/vscode.nvim'
 
     -- Git stuff
     use {
