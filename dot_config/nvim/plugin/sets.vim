@@ -13,8 +13,6 @@ set foldnestmax=3   " More than three folds should not be necessary
 
 set noerrorbells    " No warning sounds ofc
 set nu rnu          " Normal numbering at start
-set noswapfile      " Don't have stupid swaps
-set nobackup        " Don't need backup either
 " set undofile        " Default location is XDG_DATA_HOME/nvim/undo
 set termguicolors   " Enable 24-bit RGB color in terminal
 set signcolumn=auto " Always show the sign column

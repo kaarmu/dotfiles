@@ -51,12 +51,14 @@ return require('packer').startup(function(use)
                     disable = {},
                 },
                 ensure_installed = {
-                    'comment',
                     'c',
+                    'comment',
                     'cpp',
-                    'python',
+                    'javascript',
                     'lua',
+                    'python',
                     'svelte',
+                    'typescript',
                     'zig',
                 }
             }
@@ -108,10 +110,14 @@ return require('packer').startup(function(use)
 
             local servers = {
                 clangd = {},
-                eslint = {},
+                eslint = {
+                    filetypes = { "javascript", "javascript.jsx", "typescript", "typescript.tsx" },
+                },
                 pyright = {},
                 svelte = {},
+                tailwindcss = {},
                 zls = {},
+                typst_lsp = {},
             }
 
             for server, options in pairs(servers) do
@@ -190,25 +196,31 @@ return require('packer').startup(function(use)
     }
 
     -- Nice UX
+    use {
+        'Mofiqul/vscode.nvim',
+        config = function() require('vscode').setup{} end,
+    }
     use 'tpope/vim-commentary'
     use 'tpope/vim-vinegar'
     use 'tpope/vim-surround'
     use 'tpope/vim-unimpaired'
     use 'tpope/vim-repeat'
+    use 'godlygeek/tabular'
     use { 'junegunn/goyo.vim', opt = true }
 
     -- Git stuff
     use {
         'lewis6991/gitsigns.nvim',
-        config = function()
-            require('gitsigns').setup()
-        end,
+        config = function() require('gitsigns').setup() end,
     }
     use 'tpope/vim-fugitive'
 
     -- Special language support
     use {'ziglang/zig.vim', ft = {'zig'}}
+    use {'rust-lang/rust.vim', ft = {'rust'}}
+    use {'kaarmu/typst.vim', ft = {'typst'}}
     use {'mattn/emmet-vim', opt = true }
+    use { 'lf-lang/lingua-franca.vim', opt = true }
 
     -- Auto-sync during bootstrap
     if packer_bootstrap then
