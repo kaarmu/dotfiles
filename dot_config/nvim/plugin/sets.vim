@@ -1,6 +1,9 @@
-" Vim settings
+" Vim set options
 " Author: kaarmu
 " ==============================================================================
+" General                                                                   {{{1
+" ------------------------------------------------------------------------------
+
 set showmatch       " Show matching braces
 set colorcolumn=    " Vertical ruler
 
@@ -54,4 +57,5 @@ set smartcase   " Smart case-insensitive search
 set completeopt=menuone,noinsert,noselect
 set pumheight=10
 
+"                                                                           }}}1
 " ==============================================================================

@@ -132,9 +132,7 @@ return require('packer').startup(function(use)
     -- Auto completion
     use {
         'folke/which-key.nvim',
-        config = function()
-            require('which-key').setup()
-        end,
+        config = function() require('which-key').setup() end,
     }
     use 'onsails/lspkind-nvim'
     use 'hrsh7th/cmp-buffer'
@@ -216,11 +214,11 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
 
     -- Special language support
+    use {'mattn/emmet-vim', opt = true }
     use {'ziglang/zig.vim', ft = {'zig'}}
     use {'rust-lang/rust.vim', ft = {'rust'}}
     use {'kaarmu/typst.vim', ft = {'typst'}}
-    use {'mattn/emmet-vim', opt = true }
-    use { 'lf-lang/lingua-franca.vim', opt = true }
+    use { 'lf-lang/lingua-franca.vim', ft = {'linguafranca'}}
 
     -- Auto-sync during bootstrap
     if packer_bootstrap then
