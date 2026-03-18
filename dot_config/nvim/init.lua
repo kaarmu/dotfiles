@@ -38,6 +38,8 @@ vim.pack.add({
     { src = "https://github.com/ggandor/leap.nvim" }, -- requires tpope/vim-repeat
     -- Command Hints 
     { src = "https://github.com/folke/which-key.nvim" },
+    -- Other
+    { src = "https://github.com/kaarmu/typst.vim" },
 })
 
 -- Core Operations
