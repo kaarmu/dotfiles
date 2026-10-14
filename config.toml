@@ -1,4 +1,8 @@
 [tools]
+bat = "latest"
+# Keep Intel macOS support alongside Linux and Apple Silicon.
+delta = "0.18.2"
+jq = "latest"
 gh = "latest"
 neovim = "latest"
 uv = "latest"
@@ -11,3 +15,6 @@ python = "latest"
 [dotfiles]
 "~/.zshrc" = { source = "dot_config/shell/.zshrc", mode = "symlink" }
 "~/.config/nvim" = { source = "dot_config/nvim", mode = "symlink" }
+
+"~/.config/bat/config" = { source = "dot_config/bat/config", mode = "symlink" }
+"~/.config/git/config" = { source = "dot_config/git/config", mode = "symlink" }

@@ -1,0 +1,16 @@
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    syntax-theme = ansi
+    # Terminal colors remain readable when the terminal changes theme.
+    minus-style = red normal
+    plus-style = green normal
+    minus-emph-style = bold red normal
+    plus-emph-style = bold green normal
+    file-style = bold blue
+    hunk-header-style = bold cyan

@@ -17,8 +17,10 @@ The shell configuration is for Zsh; open a new Zsh session to activate mise.
 
 ## Repository layout
 
-- `config.toml`: global tool versions and shell/Neovim deployment rules.
+- `config.toml`: global tool versions and dotfile deployment rules.
 - `dot_config/shell/.zshrc`: portable Zsh configuration.
+- `dot_config/bat/config`: terminal-palette syntax highlighting.
+- `dot_config/git/config`: delta pager and interactive diff settings.
 - `dot_config/nvim/`: active Neovim configuration and native package lockfile.
 - `archive/neovim/`: previous lazy.nvim setup, retained for reference.
 
@@ -55,3 +57,14 @@ The checkout lives at `~/.config/mise`. Run the Git commands from that directory
 This setup uses explicit Git commits and pulls. Automatic mise dotfile-history
 sync is a separate repository model and is not enabled here. Local settings
 belong in ignored `config.local.toml` files.
+
+## Terminal colors
+
+Bat and delta use the terminal ANSI palette, so colors follow your terminal's
+light/dark theme without a fixed background. Configure your terminal to follow
+the system theme if desired. Delta supports diff navigation with n and N.
+Jq uses its default terminal colors and disables colors when piped; no separate
+jq configuration is needed. Git identity and credentials remain in ~/.gitconfig,
+which takes precedence over the shared Git settings.
+
+Delta is pinned to 0.18.2 for Intel macOS compatibility; bat and jq track latest.

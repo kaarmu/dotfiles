@@ -36,3 +36,6 @@ path=("$HOME/.local/bin" "$HOME/.local/share/bin" $path)
 if command -v mise >/dev/null 2>&1; then
     eval "$(mise activate zsh)"
 fi
+
+# Use the same bat config location on macOS and Linux.
+export BAT_CONFIG_PATH="$HOME/.config/bat/config"
