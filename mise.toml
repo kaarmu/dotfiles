@@ -1,4 +1,0 @@
-[dotfiles]
-"~/.zshrc"                = { source = "dot_config/shell/.zshrc" }
-"~/.config/nvim"          = { source = "dot_config/nvim" }
-"~/.config/mise"          = { source = "dot_config/mise" }

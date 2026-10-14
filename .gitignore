@@ -1,3 +1,12 @@
-dot_config/nvim/dot_netrwhist
-dot_config/nvim/dot_viminfo
+# Machine-local mise settings.
+/config.local.toml
+/conf.d/*.local.toml
+
+# Editor and operating-system state.
+.DS_Store
+*.swp
+*.swo
+*~
+dot_config/nvim/.netrwhist
+dot_config/nvim/.viminfo
 dot_config/nvim/plugin/packer_compiled.lua

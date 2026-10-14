@@ -47,7 +47,7 @@ vim.pack.add({
 require("oil").setup({})
 vim.keymap.set('n', "-", ":Oil<CR>")
 
-require("leap").set_default_mappings()
+-- require("leap").set_default_mappings()
 
 require("mini.align").setup({})
 
