@@ -1,0 +1,4 @@
+[tools]
+gh = "latest"
+neovim = "latest"
+uv = "latest"
