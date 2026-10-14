@@ -1,0 +1,3 @@
+[dotfiles]
+"~/.zshrc" = { source = "../dot_config/shell/.zshrc", mode = "symlink" }
+"~/.config/nvim" = { source = "../dot_config/nvim", mode = "symlink" }

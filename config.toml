@@ -1,0 +1,9 @@
+[tools]
+gh = "latest"
+neovim = "latest"
+uv = "latest"
+typst = "latest"
+
+# Python runtime for IPython.
+python = "3.14"
+"pypi:ipython" = "latest"
