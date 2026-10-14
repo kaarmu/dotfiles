@@ -5,5 +5,9 @@ uv = "latest"
 typst = "latest"
 
 # Python runtime for IPython.
-python = "3.14"
+python = "latest"
 "pypi:ipython" = "latest"
+
+[dotfiles]
+"~/.zshrc" = { source = "dot_config/shell/.zshrc", mode = "symlink" }
+"~/.config/nvim" = { source = "dot_config/nvim", mode = "symlink" }

@@ -12,13 +12,12 @@ mise bootstrap --adopt git@github.com:kaarmu/dotfiles.git
 ```
 
 Mise adopts the repository as a checkout at `~/.config/mise`, installs the
-declared tools, and applies the dotfiles in `conf.d/dotfiles.toml`.
+declared tools, and applies the dotfiles declared in `config.toml`.
 The shell configuration is for Zsh; open a new Zsh session to activate mise.
 
 ## Repository layout
 
-- `config.toml`: global tool versions, including Python for IPython.
-- `conf.d/dotfiles.toml`: shell and Neovim deployment rules.
+- `config.toml`: global tool versions and shell/Neovim deployment rules.
 - `dot_config/shell/.zshrc`: portable Zsh configuration.
 - `dot_config/nvim/`: active Neovim configuration and native package lockfile.
 - `archive/neovim/`: previous lazy.nvim setup, retained for reference.
@@ -51,8 +50,7 @@ git pull --ff-only
 mise bootstrap
 ```
 
-On this machine, `~/.config/mise` points to `~/Software/dotfiles`, so both
-paths access the same checkout. Run the Git commands from either path.
+The checkout lives at `~/.config/mise`. Run the Git commands from that directory.
 
 This setup uses explicit Git commits and pulls. Automatic mise dotfile-history
 sync is a separate repository model and is not enabled here. Local settings

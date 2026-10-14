@@ -1,6 +1,5 @@
 # Machine-local mise settings.
 /config.local.toml
-/conf.d/*.local.toml
 
 # Editor and operating-system state.
 .DS_Store
