@@ -103,9 +103,12 @@ The leader key is backslash (`\`). Useful mappings:
 | `\aa` / `:Claude` | Toggle Claude in the same sidebar |
 | `\o` | Save the current file and reload the config |
 
-Install the `codex` and/or `claude` CLIs separately and make them available on
-PATH; authentication stays with each tool. The sidebar uses Neovim's built-in
-terminal and does not require an AI plugin or send buffer contents on its own.
+Mise installs the native `codex` and `claude` CLIs as part of bootstrap.
+On an existing machine, run `mise install codex claude` after updating the
+repository. Upgrade them with `mise upgrade codex claude`; Claude background
+auto-updates are disabled so mise controls its installed version. Sign in to
+each CLI separately on each machine; authentication stays with each tool.
+The sidebar uses Neovim's built-in terminal and does not require an AI plugin or send buffer contents on its own.
 Each working directory gets separate Codex and Claude processes. Switching or
 hiding a sidebar keeps its process alive until it exits or Neovim quits.
 
@@ -115,6 +118,12 @@ hides the pane. Ctrl+W followed by h/j/k/l moves to another editor window.
 Outside the terminal, use normal Vim window commands. External file changes
 are checked when returning from terminal mode or refocusing the editor;
 unsaved buffers are not silently overwritten.
+
+A typical workflow is to open Neovim from the project root, save files with
+`:wa`, open either sidebar, and ask the tool to inspect or change files on disk.
+Return to the editor with Ctrl+W h, then use `:Git diff` to review the changes.
+The sidebar does not automatically attach your current file or selection;
+mention the file path or paste relevant text in your prompt when needed.
 
 Delta is pinned to 0.18.2 for Intel macOS compatibility; bat and jq track latest.
 

@@ -8,9 +8,17 @@ neovim = "latest"
 uv = "latest"
 typst = "latest"
 
+# Native AI CLIs; no Node.js runtime required.
+codex = "latest"
+claude = "latest"
+
 # Python runtime for IPython.
 python = "latest"
 "pypi:ipython" = "latest"
+
+[env]
+# Keep Claude updates under mise, alongside the other tools.
+DISABLE_AUTOUPDATER = "1"
 
 [dotfiles]
 "~/.zshrc" = { source = "dot_config/shell/.zshrc", mode = "symlink" }
