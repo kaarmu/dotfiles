@@ -1,0 +1,6 @@
+# Quiet, built-in themes; switch with the OS appearance on macOS and Linux.
+theme = light:Tomorrow,dark:Tomorrow Night
+window-theme = system
+
+# Keep the shell cursor steady. Applications such as Neovim can override it.
+cursor-style-blink = false

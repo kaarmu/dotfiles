@@ -18,3 +18,5 @@ python = "latest"
 
 "~/.config/bat/config" = { source = "dot_config/bat/config", mode = "symlink" }
 "~/.config/git/config" = { source = "dot_config/git/config", mode = "symlink" }
+
+"~/.config/ghostty/config.ghostty" = { source = "dot_config/ghostty/config.ghostty", mode = "symlink" }

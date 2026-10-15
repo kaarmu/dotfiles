@@ -1,81 +1,93 @@
-local vim = vim -- For collecting diagnostic errors
-
 vim.g.mapleader = "\\"
-vim.o.expandtab = true
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.shiftwidth = 4
-vim.o.signcolumn = "yes"
-vim.o.smartindent = true
-vim.o.softtabstop = 4
-vim.o.swapfile = false
-vim.o.tabstop = 4
-vim.o.termguicolors = true
-vim.o.winborder = "rounded"
-vim.o.wrap = false
 
-vim.cmd("set completeopt+=noselect")
+vim.opt.expandtab = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
+vim.opt.smartindent = true
+vim.opt.signcolumn = "auto"
+vim.opt.swapfile = false
+vim.opt.undofile = true
+vim.opt.wrap = false
+vim.opt.winborder = "single"
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.completeopt:append("noselect")
 
-vim.keymap.set('n', "<leader>o", ":update<CR>:source<CR>")
+-- Use Ghostty's ANSI palette, including its system-selected foreground/background.
+-- Leave 'background' unset so Neovim can detect it from the terminal (OSC 11).
+vim.opt.termguicolors = false
+vim.cmd.colorscheme("default")
+vim.api.nvim_create_autocmd("FocusGained", {
+    group = vim.api.nvim_create_augroup("config_terminal_theme", { clear = true }),
+    desc = "Refresh terminal appearance after a system theme change",
+    callback = function() vim.api.nvim_ui_send("\027]11;?\027\\") end,
+})
 
 vim.pack.add({
-    -- Core Operations
     { src = "https://github.com/stevearc/oil.nvim" },
-    { src = "https://github.com/ggandor/leap.nvim" },
+    { src = "https://codeberg.org/andyg/leap.nvim" },
     { src = "https://github.com/echasnovski/mini.align" },
     { src = "https://github.com/echasnovski/mini.pick" },
-    -- LSP
-    { src = "https://github.com/mason-org/mason.nvim" },
-    { src = "https://github.com/neovim/nvim-lspconfig" },
-    -- Colorscheme
-    { src = "https://github.com/vague2k/vague.nvim" },
-    -- tpope <3
     { src = "https://github.com/tpope/vim-repeat" },
     { src = "https://github.com/tpope/vim-surround" },
     { src = "https://github.com/tpope/vim-fugitive" },
     { src = "https://github.com/tpope/vim-commentary" },
-    -- Fancy Movement (trigger with 's')
-    { src = "https://github.com/ggandor/leap.nvim" }, -- requires tpope/vim-repeat
-    -- Command Hints 
     { src = "https://github.com/folke/which-key.nvim" },
-    -- Other
     { src = "https://github.com/kaarmu/typst.vim" },
 })
 
--- Core Operations
+require("oil").setup({
+    columns = {}, -- Plain filenames; no icon plugin or special font required.
+    lsp_file_methods = { enabled = false },
+})
+require("mini.align").setup()
+require("mini.pick").setup()
+require("which-key").setup({ icons = { mappings = false } })
 
-require("oil").setup({})
-vim.keymap.set('n', "-", ":Oil<CR>")
+local map = vim.keymap.set
+map("n", "-", "<Cmd>Oil<CR>", { desc = "Open parent directory (Oil)" })
+map({ "n", "x", "o" }, "s", "<Plug>(leap)", { desc = "Leap" })
 
--- require("leap").set_default_mappings()
+map("n", "<leader>h", "<Cmd>Pick help<CR>", { desc = "Search help" })
+map("n", "<leader>ff", "<Cmd>Pick files<CR>", { desc = "Find files" })
+map("n", "<leader>fb", "<Cmd>Pick buffers<CR>", { desc = "Find buffers" })
+map("n", "<leader>fg", "<Cmd>Pick grep_live<CR>", { desc = "Search file contents" })
+map("n", "<leader>o", function()
+    vim.cmd.update()
+    dofile(vim.fn.stdpath("config") .. "/init.lua")
+end, { desc = "Save and reload config" })
 
-require("mini.align").setup({})
+-- Oil still behaves like vinegar with '-'; this is an optional side-by-side view.
+map("n", "<leader>e", function()
+    require("oil").open(nil, { vertical = true, split = "topleft" }, function()
+        vim.api.nvim_win_set_width(0, 30)
+    end)
+end, { desc = "Open Oil in left split" })
 
-require("mini.pick").setup({})
-vim.keymap.set('n', "<leader>h", ":Pick help<CR>")
+local ai = require("config.ai")
+map("n", "<leader>ac", function() ai.toggle("codex") end, { desc = "Codex sidebar" })
+map("n", "<leader>aa", function() ai.toggle("claude") end, { desc = "Claude sidebar" })
+vim.api.nvim_create_user_command("Codex", function() ai.toggle("codex") end,
+    { desc = "Toggle Codex sidebar", force = true })
+vim.api.nvim_create_user_command("Claude", function() ai.toggle("claude") end,
+    { desc = "Toggle Claude sidebar", force = true })
 
--- LSP
+require("which-key").add({
+    { "<leader>a", group = "AI" },
+    { "<leader>f", group = "Find" },
+})
 
-require("mason").setup()
-
-vim.lsp.enable({ "lua_ls", "basedpyright" })
-vim.api.nvim_create_autocmd("LspAttach", {
-    callback = function(ev)
-        local client = vim.lsp.get_client_by_id(ev.data.client_id)
-        if client:supports_method("textDocument/completion") then
-            vim.lsp.completion.enable(true, client.id, ev.buf, {
-                autotrigger = true,
-            })
+-- Catch external edits after working with an AI tool; do not overwrite unsaved work.
+vim.api.nvim_create_autocmd({ "FocusGained", "TermLeave", "BufEnter" }, {
+    group = vim.api.nvim_create_augroup("config_checktime", { clear = true }),
+    callback = function()
+        if vim.fn.mode() ~= "c" and vim.bo.buftype == "" then
+            vim.cmd.checktime()
         end
     end,
 })
-
--- Colorscheme
-
-require("vague").setup({
-    transparent = true,
-})
-
-vim.cmd("colorscheme vague")
-vim.cmd(":hi statusline guibg=NONE")
-

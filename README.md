@@ -22,6 +22,7 @@ The shell configuration is for Zsh; open a new Zsh session to activate mise.
 - `dot_config/bat/config`: terminal-palette syntax highlighting.
 - `dot_config/git/config`: delta pager and interactive diff settings.
 - `dot_config/nvim/`: active Neovim configuration and native package lockfile.
+- `dot_config/ghostty/`: shared Ghostty settings for macOS and Linux.
 - `archive/neovim/`: previous lazy.nvim setup, retained for reference.
 
 ## Save and share changes
@@ -60,11 +61,62 @@ belong in ignored `config.local.toml` files.
 
 ## Terminal colors
 
-Bat and delta use the terminal ANSI palette, so colors follow your terminal's
-light/dark theme without a fixed background. Configure your terminal to follow
-the system theme if desired. Delta supports diff navigation with n and N.
-Jq uses its default terminal colors and disables colors when piped; no separate
-jq configuration is needed. Git identity and credentials remain in ~/.gitconfig,
-which takes precedence over the shared Git settings.
+Ghostty selects Tomorrow (light) or Tomorrow Night (dark) from the system
+appearance. Its shared config is deployed to `~/.config/ghostty/config.ghostty`
+on macOS and Linux. Reload Ghostty with Cmd+Shift+, on macOS or Ctrl+Shift+,
+on Linux. A macOS-only config in `~/Library/Application Support/com.mitchellh.ghostty/`
+can override the shared settings; keep personal overrides there if needed.
+
+Neovim uses its built-in default colorscheme with true color disabled, so its
+colors come from Ghostty's ANSI palette. Leave Neovim's `background` unset:
+it detects the terminal background and adjusts its highlights automatically.
+Refocusing Neovim requests the current terminal background again.
+Bat and delta also use the terminal palette. Delta supports diff navigation
+with n and N. Jq uses its default terminal colors and disables colors when
+piped; no separate jq configuration is needed.
+
+## Neovim
+
+Requires Neovim 0.12 or newer. Plugins use only the built-in `vim.pack` manager;
+there is no LSP, debugger, or Treesitter configuration. Leap follows its new
+Codeberg repository. Use `:lua vim.pack.update()` to review package updates.
+Commit the native lockfile with deliberate updates.
+
+When migrating an existing installation, remove the old cached packages from
+inside Neovim once (they are no longer loaded by this config):
+
+```vim
+:lua vim.pack.del({ 'mason.nvim', 'nvim-lspconfig', 'vague.nvim' })
+```
+
+The leader key is backslash (`\`). Useful mappings:
+
+| Mapping | Action |
+| --- | --- |
+| `-` | Oil in the current window, like vinegar |
+| `\e` | Oil in a narrow left split (files open in that split) |
+| `s` | Leap in normal, visual, or operator-pending mode |
+| `\ff` / `\fb` | Find files / buffers |
+| `\fg` | Search file contents (requires `rg` or `git`) |
+| `\h` | Search help |
+| `\ac` / `:Codex` | Toggle Codex in a right sidebar |
+| `\aa` / `:Claude` | Toggle Claude in the same sidebar |
+| `\o` | Save the current file and reload the config |
+
+Install the `codex` and/or `claude` CLIs separately and make them available on
+PATH; authentication stays with each tool. The sidebar uses Neovim's built-in
+terminal and does not require an AI plugin or send buffer contents on its own.
+Each working directory gets separate Codex and Claude processes. Switching or
+hiding a sidebar keeps its process alive until it exits or Neovim quits.
+
+Inside an AI terminal, Esc reaches the tool normally. Ctrl+] enters Neovim
+normal mode to scroll, search, and yank; `i` resumes terminal input and `q`
+hides the pane. Ctrl+W followed by h/j/k/l moves to another editor window.
+Outside the terminal, use normal Vim window commands. External file changes
+are checked when returning from terminal mode or refocusing the editor;
+unsaved buffers are not silently overwritten.
 
 Delta is pinned to 0.18.2 for Intel macOS compatibility; bat and jq track latest.
+
+Git identity and credentials remain in `~/.gitconfig`, which takes precedence
+over the shared Git settings.

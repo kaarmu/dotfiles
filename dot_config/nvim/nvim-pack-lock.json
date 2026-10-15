@@ -1,12 +1,8 @@
 {
   "plugins": {
     "leap.nvim": {
-      "rev": "42005994667fec7c4a318fc8441fe02e1a70186b",
-      "src": "https://github.com/ggandor/leap.nvim"
-    },
-    "mason.nvim": {
-      "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
-      "src": "https://github.com/mason-org/mason.nvim"
+      "rev": "277e04fad21e3af05a55cc414757b09a704f2a92",
+      "src": "https://codeberg.org/andyg/leap.nvim"
     },
     "mini.align": {
       "rev": "34efb28993933ba1bded1890ca81821bc1dfd258",
@@ -16,10 +12,6 @@
       "rev": "7cb8fd34bde460986e5e39e9539a9f992ec9772e",
       "src": "https://github.com/echasnovski/mini.pick"
     },
-    "nvim-lspconfig": {
-      "rev": "ac062d0d01c019c0dbdb798968f3e5d8b35c3853",
-      "src": "https://github.com/neovim/nvim-lspconfig"
-    },
     "oil.nvim": {
       "rev": "d3733d933833a0e59b813ecec99341527adf0c28",
       "src": "https://github.com/stevearc/oil.nvim"
@@ -27,10 +19,6 @@
     "typst.vim": {
       "rev": "1d5436c0f55490893892441c0eca55e6cdf4916c",
       "src": "https://github.com/kaarmu/typst.vim"
-    },
-    "vague.nvim": {
-      "rev": "73f8aaa866bf3d14dd0b0ab9e48c11794c1cb7ab",
-      "src": "https://github.com/vague2k/vague.nvim"
     },
     "vim-commentary": {
       "rev": "64a654ef4a20db1727938338310209b6a63f60c9",
