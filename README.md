@@ -125,7 +125,10 @@ Return to the editor with Ctrl+W h, then use `:Git diff` to review the changes.
 The sidebar does not automatically attach your current file or selection;
 mention the file path or paste relevant text in your prompt when needed.
 
-Delta is pinned to 0.18.2 for Intel macOS compatibility; bat and jq track latest.
+Delta is pinned to 0.18.2 for Intel macOS compatibility; bat, jq, and eza track latest.
+When eza is installed, `ls` (and `l`, `ll`, `la`) use it, and `tree` runs
+`eza --tree`; limit its depth with `-L <n>`. Without eza, `ls` falls back to
+the system command.
 
 Git identity and credentials remain in `~/.gitconfig`, which takes precedence
 over the shared Git settings.

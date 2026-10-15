@@ -3,6 +3,8 @@ bat = "latest"
 # Keep Intel macOS support alongside Linux and Apple Silicon.
 delta = "0.18.2"
 jq = "latest"
+# Provides `tree` through an alias in .zshrc.
+eza = "latest"
 gh = "latest"
 neovim = "latest"
 uv = "latest"

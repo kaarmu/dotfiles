@@ -37,5 +37,11 @@ if command -v mise >/dev/null 2>&1; then
     eval "$(mise activate zsh)"
 fi
 
+# Prefer eza once mise provides it; the system ls aliases above are the fallback.
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza'
+    alias tree='eza --tree'
+fi
+
 # Use the same bat config location on macOS and Linux.
 export BAT_CONFIG_PATH="$HOME/.config/bat/config"
