@@ -1,7 +1,7 @@
 # Dotfiles
 
 Personal mise configuration for macOS, Ubuntu, and Fedora. Tools are managed
-by mise; no system packages are declared.
+by mise. The only system package is zsh on Linux (apt or dnf); macOS ships it.
 
 ## Set up a new machine
 
@@ -13,7 +13,9 @@ mise bootstrap --adopt git@github.com:kaarmu/dotfiles.git
 
 Mise adopts the repository as a checkout at `~/.config/mise`, installs the
 declared tools, and applies the dotfiles declared in `config.toml`.
-The shell configuration is for Zsh; open a new Zsh session to activate mise.
+The shell configuration is for Zsh. Bootstrap installs zsh on Linux and sets
+it as the login shell, which uses sudo and may ask for your password.
+Log out and back in (or open a new Zsh session) to activate mise.
 
 ## Repository layout
 

@@ -18,6 +18,15 @@ claude = "latest"
 python = "latest"
 "pypi:ipython" = "latest"
 
+[bootstrap.packages]
+# Linux only; skipped on macOS, which ships zsh.
+"apt:zsh" = "latest"
+"dnf:zsh" = "latest"
+
+[bootstrap.user]
+# /bin/zsh exists on macOS, Ubuntu, and Fedora.
+login_shell = "/bin/zsh"
+
 [env]
 # Keep Claude updates under mise, alongside the other tools.
 DISABLE_AUTOUPDATER = "1"
