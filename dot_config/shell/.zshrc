@@ -2,9 +2,17 @@ PS1='%F{blue}%B%~%b%f %F{green}❯%f '
 
 autoload -U compinit && compinit
 
+# Save history on Linux too; these match macOS's /etc/zshrc defaults.
+HISTFILE="${ZDOTDIR:-$HOME}/.zsh_history"
+HISTSIZE=2000
+SAVEHIST=1000
+
 bindkey -e
-bindkey "\e[A" history-beginning-search-backward
-bindkey "\e[B" history-beginning-search-forward
+# Arrows send \e[A or \eOA depending on the terminal's keypad mode.
+for up down in "\e[A" "\e[B" "\eOA" "\eOB"; do
+    bindkey "$up" history-beginning-search-backward
+    bindkey "$down" history-beginning-search-forward
+done
 
 alias v='nvim'
 alias g='git'

@@ -14,7 +14,7 @@ typst = "latest"
 codex = "latest"
 claude = "latest"
 
-# Python runtime for IPython.
+# Python for direct use; IPython runs in its own uv-managed environment.
 python = "latest"
 "pypi:ipython" = "latest"
 

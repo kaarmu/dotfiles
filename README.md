@@ -25,7 +25,6 @@ Log out and back in (or open a new Zsh session) to activate mise.
 - `dot_config/git/config`: delta pager and interactive diff settings.
 - `dot_config/nvim/`: active Neovim configuration and native package lockfile.
 - `dot_config/ghostty/`: shared Ghostty settings for macOS and Linux.
-- `archive/neovim/`: previous lazy.nvim setup, retained for reference.
 
 ## Save and share changes
 
@@ -42,20 +41,43 @@ git push
 
 Commit `nvim-pack-lock.json` together with deliberate Neovim package updates.
 
-On another machine that adopted this repository, update and apply in one command:
+The checkout lives at `~/.config/mise`. Run the Git commands from that directory.
+
+## Update an existing machine
+
+Pull, apply, and upgrade tools:
 
 ```sh
-mise bootstrap --adopt git@github.com:kaarmu/dotfiles.git --update
+mise bootstrap --adopt "$(git -C ~/.config/mise remote get-url origin)" --update
+mise upgrade
 ```
 
-Alternatively, inside the checkout:
+The first command runs `git pull --ff-only` in the checkout, then applies the
+configuration. `--adopt` must match the checkout's `origin` URL exactly, which
+the `git remote` call guarantees. `--update` also refreshes package-manager
+metadata, so on Linux it may ask for your sudo password. Alternatively, inside
+the checkout:
 
 ```sh
 git pull --ff-only
 mise bootstrap
+mise upgrade
 ```
 
-The checkout lives at `~/.config/mise`. Run the Git commands from that directory.
+Bootstrap only installs missing tools; `mise upgrade` moves tools that track
+`latest` to their newest versions.
+
+If the pull changed `nvim-pack-lock.json`, restart Neovim (new plugins install
+on startup), then move existing plugins to the committed revisions and confirm
+with `:write`:
+
+```vim
+:lua vim.pack.update(nil, { target = 'lockfile' })
+```
+
+If bootstrap stops because a regular file already exists where a dotfile
+should be linked, merge anything you want to keep into this repository, then
+replace the file with `mise bootstrap --force-dotfiles`.
 
 This setup uses explicit Git commits and pulls. Automatic mise dotfile-history
 sync is a separate repository model and is not enabled here. Local settings
