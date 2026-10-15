@@ -45,27 +45,15 @@ The checkout lives at `~/.config/mise`. Run the Git commands from that directory
 
 ## Update an existing machine
 
-Pull, apply, and upgrade tools:
+From any directory:
 
 ```sh
-mise bootstrap --adopt "$(git -C ~/.config/mise remote get-url origin)" --update
-mise upgrade
+mise run update
 ```
 
-The first command runs `git pull --ff-only` in the checkout, then applies the
-configuration. `--adopt` must match the checkout's `origin` URL exactly, which
-the `git remote` call guarantees. `--update` also refreshes package-manager
-metadata, so on Linux it may ask for your sudo password. Alternatively, inside
-the checkout:
-
-```sh
-git pull --ff-only
-mise bootstrap
-mise upgrade
-```
-
-Bootstrap only installs missing tools; `mise upgrade` moves tools that track
-`latest` to their newest versions.
+This pulls the checkout (`git pull --ff-only`), runs `mise bootstrap` to apply
+the configuration, and runs `mise upgrade` to move tools that track `latest`
+to their newest versions.
 
 If the pull changed `nvim-pack-lock.json`, restart Neovim (new plugins install
 on startup), then move existing plugins to the committed revisions and confirm

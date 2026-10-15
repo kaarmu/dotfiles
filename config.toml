@@ -31,6 +31,10 @@ login_shell = "/bin/zsh"
 # Keep Claude updates under mise, alongside the other tools.
 DISABLE_AUTOUPDATER = "1"
 
+[tasks.update]
+description = "Pull this repository, apply it, and upgrade tools"
+run = ["git -C ~/.config/mise pull --ff-only", "mise bootstrap", "mise upgrade"]
+
 [dotfiles]
 "~/.zshrc" = { source = "dot_config/shell/.zshrc", mode = "symlink" }
 "~/.config/nvim" = { source = "dot_config/nvim", mode = "symlink" }
